@@ -1,11 +1,15 @@
 #summary Webmin WebGUI testing using ab (ApacheBench).
 
-= Introduction =
+== Introduction ==
 
-This page documents benchmark testing results for the Webmin based web-GUI included in TinyBSD_AP.  The web server is Perl based MiniServ.
+This page documents benchmark testing results for the Webmin based web-GUI included in TinyBSD_AP.  The web server is Perl based !MiniServ.  Goal of performing this benchmarking is:
+* See if MiniServ crashes under high load, or behaves abnormally in any other way
+* Compare with standard response times, as Webmin is resource hungry and there's plenty of room to speed up the webGUI.
 
 
-= TinyBSD_AP 0.9 =
+
+
+== TinyBSD_AP 0.9 ==
 
 === Sample Test: 1 request, no concurrency ===
 {{{

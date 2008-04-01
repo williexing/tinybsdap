@@ -1,4 +1,5 @@
 #summary Webmin WebGUI testing using ab (ApacheBench).
+#labels benchmark,performance,webgui,webgui,gui,webserver,webserver
 
 == Introduction ==
 

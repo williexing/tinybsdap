@@ -3,8 +3,9 @@
 == Introduction ==
 
 This page documents benchmark testing results for the Webmin based web-GUI included in TinyBSD_AP.  The web server is Perl based !MiniServ.  Goal of performing this benchmarking is:
-* See if MiniServ crashes under high load, or behaves abnormally in any other way
-* Compare with standard response times, as Webmin is resource hungry and there's plenty of room to speed up the webGUI.
+
+ * See if !MiniServ crashes under high load, or behaves abnormally in any other way
+ * Compare with standard response times, as Webmin is resource hungry and there's plenty of room to speed up the webGUI.
 
 
 

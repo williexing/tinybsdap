@@ -2,13 +2,12 @@
 #labels tinybsd,bootsequence,boot,startup,init
 
 {{{
- Copyright (c) 1992-2008 The FreeBSD Project.0000E101 A0012000 05
 Copyright (c) 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994
         The Regents of the University of California. All rights reserved.
 FreeBSD is a registered trademark of The FreeBSD Foundation.nitor.
 FreeBSD 7.0-RELEASE #0: Tue Mar 25 18:51:50 CET 2008
     root@fbsd70.kwest.wapsol.de:/usr/obj/usr/src/sys/TINYBSD
-Timecounter "i8254" frequency 1189162 Hz quality 0
+Timecounter "i8254" frequency 1189164 Hz quality 0
 CPU: AMD Enhanced Am486DX4/Am5x86 Write-Back (486-class CPU)
   Origin = "AuthenticAMD"  Id = 0x494  Stepping = 4
   Features=0x1<FPU>
@@ -57,8 +56,7 @@ sio1: type 16550A
 sio1: [FILTER]
 Timecounters tick every 1.000 msec
 Elan-mmcr driver: MMCR at 0xc5ad7000. PPS support.
-Elan-mmcr Soekris net45stray irq7
-xx comBIOS ver. 1.23a 20040211 Copyright (C) 2000-2003
+Elan-mmcr Soekris net45xx comBIOS ver. 1.23a 20040211 Copyright (C) 2000-2003
 ipfw2 initialized, divert enabled, rule-based forwarding disabled, default to accept, logging disabled
 ad0: 124MB <ZOOMCF 128MB CF040520> at ata0-master PIO4
 Trying to mount root from ufs:/dev/ad0a
@@ -67,11 +65,11 @@ No suitable dump device was found.
 Entropy harvesting: interrupts ethernet point_to_point kickstart.
 Starting file system checks:
 /dev/ad0a: FILE SYSTEM CLEAN; SKIPPING CHECKS
-/dev/ad0a: clean, 28882 free (42 frags, 3605 blocks, 0.1% fragmentation)
+/dev/ad0a: clean, 28883 free (43 frags, 3605 blocks, 0.1% fragmentation)
 Setting hostuuid: c572f921-35d1-11d2-93ae-5f5a0edd7f09.
 Setting hostid: 0x861ae48e.
 Mounting local file systems:.
-Setting hostname: fbsd70.kwest.wapsol.de.
+Setting hostname: SecureAP.kwest.wapsol.de.
 lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> metric 0 mtu 16384
         inet 127.0.0.1 netmask 0xff000000
 route: writing to routing socket: Network is unreachable
@@ -89,20 +87,19 @@ Initial i386 initialization:.
 Additional ABI support:.
 Clearing /tmp (X related).
 Starting Webmin server in /usr/share/webmin-1.170
-exec: /usr/share/webmin-1.170/miniserv.pl: not found
+/etc/rc.d/webmin.start: /share/bash/exec: Permission denied
+/etc/rc
 Starting local daemons:.
 Updating motd ... /etc/motd is not writable, update failed.
 Mounting late file systems:.
 Starting sshd.
-eval: /usr/sbin/sendmail: not found
-eval: /usr/sbin/sendmail: not found
 Starting cron.
 Local package initialization:.
-bridge0: Ethernet address: f6:f8:bb:92:a2:3e
+bridge0: Ethernet address: 9e:4d:64:6f:b6:77
 bridge0
-sis0: Applying short cable fix (reg=f3)
+sis0: Applying short cable fix (reg=f4)
 Starting background file system checks in 60 seconds.
 
-Tue Apr  1 09:12:10 CEST 2008
-ACAABCAAA
+Tue Apr  1 15:19:07 CEST 2008
+Apr@ApBAACAAA
 }}}

@@ -1,4 +1,4 @@
-#summary Startup script for Webmin service (miniserv.pl)
+#summary Script to setup Webmin service (miniserv.pl)
 #labels webmin,webgui,gui,webgui,perl,startup,rc.d
 
 = /etc/rc.d/webmin.start =

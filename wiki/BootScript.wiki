@@ -3,12 +3,51 @@
 
 = /etc/rc.d/initsmartap.conf =
 
-This script sets up the device based on system variables defined in `/etc/smartap.conf` and /etc/madwifi.com
+This script sets up the device based on system variables defined in `/etc/smartap.conf` and `/etc/madwifi.com`
 
+{{{
+SecureAP# more /etc/rc.d/init.smartap.sh
+. /etc/smartap.conf
 
-= Details =
+MOUNT=/sbin/mount
+IFCONFIG=/sbin/ifconfig
+APACHECTL=/usr/local/sbin/apachectl
+SYSCTL=/sbin/sysctl
+HOSTAPD=/usr/sbin/hostapd
+ROUTE=/sbin/route
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+#       -- Setup sis0/ethernet interface
+$IFCONFIG $DEFAULT_ETH_INTERFACE $DEFAULT_ETH_IPADDR netmask $DEFAULT_ETH_NETMASK
+
+#       -- Setup 802.11 interface
+$IFCONFIG $DEFAULT_WIRELESS_INTERFACE ssid $DEFAULT_WIRELESS_SSID mediaopt $DEFAULT_WIRELESS_MEDIAOPT mode $DEFAULT_WIRELESS_MODE up
+$IFCONFIG $DEFAULT_WIRELESS_INTERFACE $DEFAULT_WIRELESS_IPADDR netmask $DEFAULT_WIRELESS_NETMASK
+
+#       -- Bridge sis0 and default 802.11 interface
+$SYSCTL net.link.ether.bridge.enable=1
+$SYSCTL net.link.ether.bridge.config=sis0,$DEFAULT_WIRELESS_INTERFACE
+
+$ROUTE add default $DEFAULT_ETH_DEFGTWY
+
+#       -- Setup hostapd if set in wefis.conf
+if [ $WPA2_ACTIVATE -eq 1 ];
+then
+        $HOSTAPD -B /etc/madwifi.conf
+
+elif [ -n "$DEFAULT_WIRELESS_WEPKEY" ];
+then
+        echo "Setting WEP Key"
+        $IFCONFIG $DEFAULT_WIRELESS_INTERFACE wepmode on wepkey $DEFAULT_WIRELESS_WEPKEY
+fi
+
+touch /var/db/dhcpd.leases
+
+#       -- If all goes well till here, see if it is necessary to setup
+#          this AP as DHCP server for the network
+if [ $START_DHCP -eq "1" ];
+then
+        #       -- Setting up DHCP Server on $DEV_NAME
+        /usr/local/sbin/dhcpd;
+fi
+
+}}}

@@ -1,4 +1,4 @@
-#summary Script to setup tinybsd_ap based on /etc/smartap.conf configuration.
+#summary Script to setup tinybsd_ap based on /etc/smartap.conf variables
 #labels bootscript,boot,script,init,initialize,setup
 
 = /etc/rc.d/init.tinybsdap.sh =

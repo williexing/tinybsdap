@@ -1,0 +1,14 @@
+#summary One-sentence summary of this page.
+#labels bootscript,boot,script
+
+= /etc/rc.d/initsmartap.conf =
+
+This script sets up the device based on system variables defined in `/etc/smartap.conf` and /etc/madwifi.com
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages

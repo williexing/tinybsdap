@@ -1,7 +1,7 @@
 #summary One-sentence summary of this page.
-#labels bootscript,boot,script
+#labels bootscript,boot,script,init,initialize,setup
 
-= /etc/rc.d/initsmartap.conf =
+= /etc/rc.d/init.tinybsdap.sh =
 
 This script sets up the device based on system variables defined in `/etc/smartap.conf` and `/etc/madwifi.com`
 

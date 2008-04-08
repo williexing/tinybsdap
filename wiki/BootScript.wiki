@@ -3,7 +3,7 @@
 
 = /etc/rc.d/init.tinybsdap.sh =
 
-This script sets up the device based on system variables defined in `/etc/smartap.conf` and `/etc/madwifi.com`
+This script sets up the device based on system variables defined in `/etc/smartap.conf` and `/etc/wpa.conf`
 
 {{{
 [root@SecureAP ~]# more /etc/rc.d/init.tinybsdap.sh

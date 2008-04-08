@@ -1,8 +1,8 @@
 #summary Primary configuration file for setting up WPA security
 
 ===Sample wpa.conf===
-[root@SecureAP ~]# more /etc/madwifi.conf
 {{{
+[root@SecureAP ~]# more /etc/madwifi.conf
 # Thu Apr  3 17:14:53 2008
 
 interface=ath0

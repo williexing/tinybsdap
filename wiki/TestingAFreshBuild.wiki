@@ -1,0 +1,12 @@
+#summary This page documents some of the preliminary test to perform on a freshly built TinyBSD_AP image
+
+= Commands =
+
+Create a memory device from the image
+{{{mdconfig -a -t vnode -f /usr/src/tools/tools/tinybsd/tinybsd.04.bin  -u 0}}}
+
+Mount the image onto your host's file-system
+{{{
+mount /dev/md0a /mnt
+cd /mnt/
+}}}

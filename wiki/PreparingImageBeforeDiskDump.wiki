@@ -5,3 +5,6 @@
  # create /etc/rc.d/init.tinybsdap.sh
  # create /etc/rc.d/webmin.start
  # check /etc/fstab.  It should be as below
+{{{
+/dev/ad0a / ufs rw 1 1
+}}}

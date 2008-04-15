@@ -1,0 +1,13 @@
+#summary Adding Ports to a fresh TinyBSD Build
+
+= Introduction =
+
+The basic TinyBSD build is quite bare-boned, containing a minimalistic 802.11 capable system.  TinyBSD_AP incorporates some additional tools, some of them nice-to-haves and some of them necessary features.  This page documents process of building such features.
+
+=== bash ===
+
+{{{
+cd /usr/ports/shells/bash
+make clean
+make install PREFIX=/mnt/ FORCE_PKG_REGISTER=yes
+}}}

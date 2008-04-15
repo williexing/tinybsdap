@@ -3,7 +3,9 @@
 = Commands =
 
 Create a memory device from the image
-{{{mdconfig -a -t vnode -f /usr/src/tools/tools/tinybsd/tinybsd.04.bin  -u 0}}}
+{{{
+mdconfig -a -t vnode -f /usr/src/tools/tools/tinybsd/tinybsd.04.bin  -u 0
+}}}
 
 Mount the image onto your host's file-system
 {{{

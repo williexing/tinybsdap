@@ -11,3 +11,12 @@ cd /usr/ports/shells/bash
 make clean
 make install PREFIX=/mnt/ FORCE_PKG_REGISTER=yes
 }}}
+
+This will install the 'bash' port on the image as seen below
+{{{
+[root@fbsd70 /mnt]# find . -name bash
+./bin/bash
+./share/doc/bash
+./share/bash
+
+}}}

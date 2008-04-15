@@ -1,0 +1,7 @@
+#summary This sequence of steps can be used to prepare an image before using disk-dump to burn the flash.
+
+ # create /etc/smartap.conf with default device configuration
+ # create /etc/wpa.conf
+ # create /etc/rc.d/init.tinybsdap.sh
+ # create /etc/rc.d/webmin.start
+ # check /etc/fstab.  It should be as below

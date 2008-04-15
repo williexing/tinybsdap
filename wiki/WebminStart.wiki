@@ -1,8 +1,9 @@
 #summary Script to setup Webmin service (miniserv.pl)
 #labels webmin,webgui,gui,webgui,perl,startup,rc.d
 
-= /etc/rc.d/webmin.start =
+Copy the directory /usr/share/webmin-1.170 to the target and create the below startup file in `/etc/rc.d/` with `webmin.start`.
 
+=== /etc/rc.d/webmin.start ===
 {{{
 [root@SecureAP /etc/rc.d]# more webmin.start
 #!/bin/sh

@@ -19,6 +19,7 @@ ifconfig_sis1="inet 192.168.168.168 netmask 255.255.255.0"
 ----
 Change the default shell to bash using `chsh`
 {{{
+[root@fbsd70 /mnt]# chroot .
 [root@fbsd70 /]# chsh
 #Changing user information for root.
 Login: root

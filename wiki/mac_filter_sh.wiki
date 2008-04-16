@@ -1,0 +1,31 @@
+#summary This script is useful for MAC address filtering
+
+= /etc/rc.d/mac_filter.sh =
+
+{{{
+. /etc/smartap.conf
+
+IPFW=/sbin/ipfw
+COUNT=1000
+
+while read mac_addr
+do
+COUNT=`expr $COUNT + 1`
+echo $COUNT '->' $mac_addr
+$IPFW add $COUNT allow MAC any $mac_addr via $DEFAULT_WIRELESS_INTERFACE
+
+done < 'mac_filter.conf'
+
+#       -- Lock out everything else
+$IPFW add 9999 deny MAC any any via $DEFAULT_WIRELESS_INTERFACE
+}}}
+
+
+= /etc/mac_filter.conf =
+
+Just a list of MAC addresses, one per line, ex.
+{{{
+00:0f:2d:bf:51:9d
+00:0e:2d:70:32:a1
+00:01:2d:B9:19:d9
+}}}

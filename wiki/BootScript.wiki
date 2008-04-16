@@ -44,7 +44,7 @@ then
 elif [ -n "$DEFAULT_WIRELESS_WEPKEY" ];
 then
         echo "  Setting WEP Key"
-        $IFCONFIG $DEFAULT_WIRELESS_INTERFACE wepmode on wepkey $DEFAULT_WIRELESS_WEPKEY
+        $IFCONFIG $DEFAULT_WIRELESS_INTERFACE wepmode on weptxkey 1 wepkey $DEFAULT_WIRELESS_WEPKEY
 fi
 
 

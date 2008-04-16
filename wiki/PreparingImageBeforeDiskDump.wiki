@@ -50,3 +50,5 @@ Files have to be copied into 3 locations on the target for properly functioning 
  * /etc/webmin-1.170/
  * /etc/rc.d/webmin.start
  * /usr/share/webmin-1.170
+
+Perl on TinyBSD is located at /usr/local/bin/perl, but Webmin looks for it at /usr/bin/perl.  symlink those.

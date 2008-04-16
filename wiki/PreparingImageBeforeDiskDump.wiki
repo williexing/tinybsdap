@@ -8,11 +8,38 @@
 {{{
 /dev/ad0a / ufs rw 1 1
 }}}
-
+----
 Define a service port on one of the spare ethernet interfaces, so that if the network config is hosed, we can still access the box on this service port.  For Soekris net4511 and net4521, the service port is sis1.  Set the IP of this to 192.168.168.168 (or anything you prefer, and not used for other network interfaces on the device).
 
 Add to `/etc/rc.conf`
 {{{
 # -- Service Port
 ifconfig_sis1="inet 192.168.168.168 netmask 255.255.255.0"
+}}}
+----
+Change the default shell to bash using `chsh`
+{{{
+[root@fbsd70 /]# chsh
+#Changing user information for root.
+Login: root
+Password: $1$YGxyXoEh$p2f0dMeWo4brLSUfl0Ue21
+Uid [#]: 0
+Gid [# or name]: 0
+Change [month day year]:
+Expire [month day year]:
+Class:
+Home directory: /root
+Shell: /bin/bash
+Full Name: Charlie &
+Office Location:
+Office Phone:
+Home Phone:
+Other information:
+
+~
+~
+/etc/pw.V7cnJJ: 15 lines, 310 characters.
+chsh: warning, unknown root shell
+pwd_mkdb: warning, unknown root shell
+chsh: user information updated
 }}}

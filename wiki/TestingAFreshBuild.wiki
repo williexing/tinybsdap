@@ -28,8 +28,17 @@ The above may throw errors, which can be fixed by copying the missing files from
 [root@fbsd70 /mnt]# find / -name libintl.so.8
 /usr/local/lib/libintl.so.8
 ^C
-[root@fbsd70 /mnt]# cp /usr/local/lib/libintl.so.8 usr/local/lib/
+[root@fbsd70 /mnt]# cp /usr/local/lib/libintl.so.8 lib/
 }}}
 
+There are a couple of more such missing libraries that throw errors
+{{{
+[root@fbsd70 /mnt]# chroot .
+/libexec/ld-elf.so.1: Shared object "libiconv.so.3" not found, required by "bash"
+[root@fbsd70 /mnt]# find / -name libiconv.so.3
+/usr/local/lib/libiconv.so.3
+^C
+[root@fbsd70 /mnt]# cp /usr/local/lib/libiconv.so.3 lib/
+}}}
 
 == After Adding Ports ==

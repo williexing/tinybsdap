@@ -44,3 +44,9 @@ chsh: warning, unknown root shell
 pwd_mkdb: warning, unknown root shell
 chsh: user information updated
 }}}
+----
+=== Install WebGUI ===
+Files have to be copied into 3 locations on the target for properly functioning Webmin installation
+ * /etc/webmin-1.170/
+ * /etc/rc.d/webmin.start
+ * /usr/share/webmin-1.170

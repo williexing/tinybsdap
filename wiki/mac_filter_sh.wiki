@@ -1,23 +1,35 @@
-#summary This script is useful for MAC address filtering
+#summary This script is useful for MAC address filtering.
 
 = /etc/rc.d/mac_filter.sh =
+
+We use the built in MAC ACL commands in FreeBSD `ifconfig` (available from 7.0-REL onward)
 
 {{{
 . /etc/smartap.conf
 
+IFCONFIG=/sbin/ifconfig
 IPFW=/sbin/ipfw
+SYSCTL=/sbin/sysctl
 COUNT=1000
+
+# /sbin/sysctl net.link.ether.ipfw=0
+# /sbin/sysctl net.link.bridge.ipfw=0
+
+$IPFW -q flush
 
 while read mac_addr
 do
 COUNT=`expr $COUNT + 1`
 echo $COUNT '->' $mac_addr
-$IPFW add $COUNT allow MAC any $mac_addr via $DEFAULT_WIRELESS_INTERFACE
+# $IPFW add $COUNT allow MAC any $mac_addr via $DEFAULT_WIRELESS_INTERFACE
+$IFCONFIG $DEFAULT_WIRELESS_INTERFACE mac:add $mac_addr
+done < '/etc/mac_filter.conf'
 
-done < 'mac_filter.conf'
+$IFCONFIG $DEFAULT_WIRELESS_INTERFACE mac:allow
 
 #       -- Lock out everything else
-$IPFW add 9999 deny MAC any any via $DEFAULT_WIRELESS_INTERFACE
+# $IPFW add 9999 deny MAC any any via $DEFAULT_WIRELESS_INTERFACE
+
 }}}
 
 

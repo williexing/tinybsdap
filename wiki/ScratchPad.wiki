@@ -1,4 +1,4 @@
-#summary We put random stuff on this page.
+#summary We put random stuff here.
 
  * SSH login / root password
  * Packet filter for MAC filtering

@@ -1,0 +1,14 @@
+#summary FreeBSD 7.0 Host Machine
+
+= Introduction =
+
+A FreeBSD 7.0 (REL) host machine is currently being used as a host machine.  This page documents some notes pertaining to it's setup and maintenance.
+
+
+= Ports Maintenance =
+
+== Updating Ports ==
+
+This FreeBDSD handbook ports pages are comprehensive in explaining how to install, update and remove ports.
+
+We use `portupgrade` to upgrade ports.  This is explained in the _4.5.4.2 Upgrading Ports using Portupgrade_ section.

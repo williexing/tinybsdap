@@ -11,4 +11,4 @@ A FreeBSD 7.0 (REL) host machine is currently being used as a host machine.  Thi
 
 This FreeBDSD handbook ports pages are comprehensive in explaining how to install, update and remove ports.
 
-We use `portupgrade` to upgrade ports.  This is explained in the _4.5.4.2 Upgrading Ports using Portupgrade_ section.
+In addition to `pkgdb -F`, `pkg_version -v` can be used to figure out what ports have updates available.

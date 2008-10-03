@@ -7,7 +7,9 @@ A few 'primitive' scripts help create flash images fast by grouping together rep
 
 = flash.mount =
 
-Helps to mount the tinybsdap image (*.bin) on to the file system.
+Used to mount the tinybsdap image (*.bin) on to the file system.  This is useful when you wish to make modifications to the flash image (for ex. store default config files/values).
+
+As a result of running this script, you will find the filesystem mounted at /mnt if the `mount` was successful.
 {{{
 . ./flash.conf
 
@@ -33,11 +35,26 @@ devfs          1.0K    1.0K      0B   100%    /dev
 
 This scripts burns an image mentioned in `flash.conf` file on to the compact flash device passed in as $1.
 {{{
-. .flash.conf
+. ./flash.conf
 DEVICE=$1
 /usr/bin/time /bin/dd if=$IMAGE_DIR/$IMAGE_FILE of=$DEVICE bs=16k
 }}}
 
+Better run this script from console since it could take some time to write the image on to the flash and a dropped SSH connection might mean a damaged flash.
+
+The output looks something like below, where /dev/da0 is the CF device.  You can usually find this out my running `dmesg`.
+{{{
+[root@fbsd70 ~/bin]# ./flash.burn /dev/da0
+7968+0 records in
+7968+0 records out
+130547712 bytes transferred in 160.975639 secs (810978 bytes/sec)
+      161.66 real         0.04 user         2.18 sys
+}}}
+
 = flash.unmount =
 
+This simply unmounts the tinybsdap image from `/mnt` and removes the memory device (usually `md0`)
+
 = flash.conf =
+
+This is the config file for the above scripts, where the path and name of the source image (*.bin) is listed.

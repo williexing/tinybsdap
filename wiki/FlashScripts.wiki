@@ -1,0 +1,39 @@
+#summary Primitive scripts to create flash images quickly
+
+= Introduction =
+
+A few 'primitive' scripts help create flash images fast by grouping together repetitive commands.
+
+
+= flash.mount =
+
+Helps to mount the tinybsdap image (*.bin) on to the file system.
+{{{
+. ./flash.conf
+
+/sbin/mdconfig -a -t vnode -f $IMAGE_DIR/$IMAGE_FILE
+/sbin/mount /dev/md0a /mnt
+/bin/df -h
+}}}
+
+Output looks like:
+{{{
+[root@fbsd70 ~/bin]# ./flash.mount
+md0
+Filesystem     Size    Used   Avail Capacity  Mounted on
+/dev/ad0s1a    272M    138M    112M    55%    /
+devfs          1.0K    1.0K      0B   100%    /dev
+/dev/ad0s1e    161M     72K    148M     0%    /tmp
+/dev/ad0s1f    2.3G    1.6G    495M    77%    /usr
+/dev/ad0s1d    210M    117M     77M    60%    /var
+/dev/md0a      120M     62M     49M    56%    /mnt
+}}}
+
+= flash.burn =
+
+This scripts burns an image mentioned in `flash.conf` file on to the compact flash device passed in as $1.
+{{{
+DEVICE=$1
+
+/usr/bin/time /bin/dd if=$IMAGE_DIR/$IMAGE_FILE of=$DEVICE bs=16k
+}}}

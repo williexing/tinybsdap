@@ -33,7 +33,11 @@ devfs          1.0K    1.0K      0B   100%    /dev
 
 This scripts burns an image mentioned in `flash.conf` file on to the compact flash device passed in as $1.
 {{{
+. .flash.conf
 DEVICE=$1
-
 /usr/bin/time /bin/dd if=$IMAGE_DIR/$IMAGE_FILE of=$DEVICE bs=16k
 }}}
+
+= flash.unmount =
+
+= flash.conf =

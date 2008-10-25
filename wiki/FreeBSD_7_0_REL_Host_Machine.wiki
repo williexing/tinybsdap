@@ -1,4 +1,5 @@
 #summary FreeBSD 7.0 Host Machine
+#labels ports,host,7.0
 
 = Introduction =
 
@@ -7,8 +8,17 @@ A FreeBSD 7.0 (REL) host machine is currently being used as a host machine.  Thi
 
 = Ports Maintenance =
 
-== Updating Ports ==
+== Getting Ports ==
 
-This FreeBDSD handbook ports pages are comprehensive in explaining how to install, update and remove ports.
+We use `cvsup` for maintenance of ports.
 
-In addition to `pkgdb -F`, `pkg_version -v` can be used to figure out what ports have updates available.
+The `/usr/share/examples/cvsup/ports-supfile` file should be edited by hand to make sure only an optimal set of ports is downloaded and installed on the Host machine.  This command gets the list of ports and 
+
+{{{
+csup -L 2 -h cvsup.de.FreeBSD.org /usr/share/examples/cvsup/ports-supfile
+}}}
+
+List of servers available in Germany are:
+
+ * cvsup.de.FreeBSD.org
+ * cvsup[2-8].de.FreeBSD.org

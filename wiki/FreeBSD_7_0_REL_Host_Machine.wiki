@@ -23,7 +23,4 @@ The `/usr/share/examples/cvsup/ports-supfile` file should be edited by hand to m
 csup -L 2 -h cvsup.de.FreeBSD.org /usr/share/examples/cvsup/ports-supfile
 }}}
 
-List of servers available in Germany are:
-
- * cvsup.de.FreeBSD.org
- * cvsup[2-8].de.FreeBSD.org
+[http://www.freebsd.org/doc/en/books/handbook/cvsup.html#CVSUP-MIRRORS List of CVS servers available can be found here].

@@ -26,4 +26,4 @@ csup -L 2 -h cvsup.de.FreeBSD.org /usr/share/examples/cvsup/ports-supfile
 [http://www.freebsd.org/doc/en/books/handbook/cvsup.html#CVSUP-MIRRORS List of CVS servers available can be found here].
 
 ===Installing Ports===
-See InstallingPorts
+For installing the required ports on a freshly made TinyBSD build, see InstallingPorts

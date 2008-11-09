@@ -3,12 +3,12 @@
  # create /etc/smartap.conf with default device configuration
  # create /etc/wpa.conf
  # create /etc/rc.d/init.tinybsdap.sh
- # create /etc/rc.d/mac_filter.sh (for MAC based ACL)
  # create /etc/rc.d/webmin.start
  # check /etc/fstab.  It should be as below
 {{{
 /dev/ad0a / ufs rw 1 1
 }}}
+ # create /etc/rc.d/mac_filter.sh (for MAC based ACL)
  # Fill in all MAC addresses to be filtered into `/etc/mac_filter.conf`, or just `touch` this file
 
 ----

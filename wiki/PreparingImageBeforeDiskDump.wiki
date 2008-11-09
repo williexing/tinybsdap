@@ -3,11 +3,14 @@
  # create /etc/smartap.conf with default device configuration
  # create /etc/wpa.conf
  # create /etc/rc.d/init.tinybsdap.sh
+ # create /etc/rc.d/mac_filter.sh (for MAC based ACL)
  # create /etc/rc.d/webmin.start
  # check /etc/fstab.  It should be as below
 {{{
 /dev/ad0a / ufs rw 1 1
 }}}
+ # Fill in all MAC addresses to be filtered into `/etc/mac_filter.conf`, or just `touch` this file
+
 ----
 Define a service port on one of the spare ethernet interfaces, so that if the network config is hosed, we can still access the box on this service port.  For Soekris net4511 and net4521, the service port is sis1.  Set the IP of this to 192.168.168.168 (or anything you prefer, and not used for other network interfaces on the device).
 

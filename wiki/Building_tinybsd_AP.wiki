@@ -1,0 +1,13 @@
+#summary Proper procedure to create a tinybsd_ap build
+= Building =
+Change this kernel configuration in wireless/TINYBSD, so that if_sis.ko module gets compiled, assuming `wireless` is the configuration being used.
+{{{
+device          miibus          # MII bus support
+device          sis             # Silicon Integrated Systems SiS 900/SiS 7016
+}}}
+
+{{{
+time ./tinybsd sectors=254960 heads=64 spt=32 conf=wireless image=tinybsd.05.bin batch new
+}}}
+
+The sectors, heads and sectors per track information is available from `diskinfo -v`.

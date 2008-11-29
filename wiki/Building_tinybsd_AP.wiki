@@ -9,7 +9,7 @@ device          sis             # Silicon Integrated Systems SiS 900/SiS 7016
 By default, all the fun is going on in `/usr/src/tools/tools/tinybsd/`
 {{{
 cd /usr/src/tools/tools/tinybsd/
-time ./tinybsd sectors=254960 heads=64 spt=32 conf=wireless image=tinybsd.05.bin batch new
+time ./tinybsd sectors=254960 heads=64 spt=32 conf=wireless image=tinybsd.bin batch new
 }}}
 
 The sectors, heads and sectors per track information is available from `diskinfo -v`.

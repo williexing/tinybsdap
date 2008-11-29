@@ -48,6 +48,12 @@ pwd_mkdb: warning, unknown root shell
 chsh: user information updated
 }}}
 ----
+=== Activate the sis0 Interface ===
+sis0 ethernet interface has to be activated in `/boot/default/loader.conf`
+{{{
+if_sis_load="NO"                # Silicon Integrated Systems SiS 900/7016
+}}}
+
 === Install WebGUI ===
 Files have to be copied into 3 locations on the target for properly functioning Webmin installation
  * /etc/webmin-1.170/

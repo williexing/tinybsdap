@@ -48,3 +48,13 @@ perl-5.8.8_1                        =   up-to-date with port
 Once the above list of ports to be updated is determined, we use `portupgrade -ai` utility to upgrade the installed ports.  This command will update each port that "needs updating" and asks for confirmation for each of them.
 
 If `portupgrade` is not available on the host, see [http://www.freebsd.org/doc/en/books/handbook/ports-using.html 4.5.4.2 Upgrading Ports using Portupgrade].
+
+= FAQ =
+
+*How to activate SSH access for root on host machine.*
+
+Edit the file
+etc/ssh/sshd_config
+#PermitRootLogin yes
+
+> Remove the hash.

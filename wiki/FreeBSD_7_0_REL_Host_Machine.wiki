@@ -52,9 +52,9 @@ If `portupgrade` is not available on the host, see [http://www.freebsd.org/doc/e
 = FAQ =
 
 *How to activate SSH access for root on host machine.*
-
+{{{
 Edit the file
 etc/ssh/sshd_config
 #PermitRootLogin yes
-
-> Remove the hash.
+}}}
+Remove the hash on `PermitRootLogin`.

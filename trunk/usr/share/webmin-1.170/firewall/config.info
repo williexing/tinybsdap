@@ -1,0 +1,9 @@
+save_file=IPtables save file to edit,3,Use operating system or Webmin default
+direct=Directly edit firewall rules instead of save file?,1,1-Yes,0-No
+view_condition=Display condition?,1,1-Yes,0-No
+view_comment=Display comment?,1,1-Yes,0-No
+before_cmd=Command to run before changing rules,3,None
+after_cmd=Command to run after changing rules,3,None
+before_apply_cmd=Command to run before applying configuration,3,None
+after_apply_cmd=Command to run after applying configuration,3,None
+cluster_mode=Update cluster servers,1,0-Whenever a change is made,1-When applying the configuration

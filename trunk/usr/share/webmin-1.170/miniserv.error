@@ -1,0 +1,445 @@
+Failed to bind to 900 : Address already in use at /usr/share/webmin-1.170/miniserv.pl line 417.
+[10/Jun/2006:14:59:13 +0000] miniserv.pl started
+[10/Jun/2006:14:59:13 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local//lib/perl5/5.8.8/BSDPAN /mnt/usr/local//lib/perl5/site_perl/5.8.8/mach /mnt/usr/local//lib/perl5/site_perl/5.8.8 /mnt/usr/local//lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/i386-freebsd-64int /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[10/Jun/2006:15:00:01 +0000] miniserv.pl started
+[10/Jun/2006:15:00:01 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local//lib/perl5/5.8.8/BSDPAN /mnt/usr/local//lib/perl5/site_perl/5.8.8/mach /mnt/usr/local//lib/perl5/site_perl/5.8.8 /mnt/usr/local//lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/i386-freebsd-64int /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+ifconfig: interface br0 does not exist
+ifconfig: interface br0 does not exist
+ifconfig: interface br0 does not exist
+[10/Jun/2006:15:03:25 +0000] miniserv.pl started
+[10/Jun/2006:15:03:25 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local//lib/perl5/5.8.8/BSDPAN /mnt/usr/local//lib/perl5/site_perl/5.8.8/mach /mnt/usr/local//lib/perl5/site_perl/5.8.8 /mnt/usr/local//lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/i386-freebsd-64int /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[10/Jun/2006:15:03:58 +0000] [192.168.3.100] /secureap-0.52/ : Perl execution failed : unable to open configuration file at ./secureap-lib.pl line 47.
+
+/sbin/iwconfig: not found
+[10/Jun/2006:15:24:58 +0000] miniserv.pl started
+[10/Jun/2006:15:24:58 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local//lib/perl5/5.8.8/BSDPAN /mnt/usr/local//lib/perl5/site_perl/5.8.8/mach /mnt/usr/local//lib/perl5/site_perl/5.8.8 /mnt/usr/local//lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/i386-freebsd-64int /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+Scalar found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 76, near "$select_$power_level"
+	(Missing operator before $power_level?)
+[11/Jun/2006:06:30:06 +0000] [84.57.145.212] /802.11/ : Perl execution failed : syntax error at /usr/share/webmin-1.170/802.11/index.cgi line 76, near "$select_$power_level "
+
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+Scalar found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 92, near "$($sel_var"
+	(Missing operator before $sel_var?)
+[11/Jun/2006:07:29:27 +0000] [84.57.145.212] /802.11/ : Perl execution failed : syntax error at /usr/share/webmin-1.170/802.11/index.cgi line 92, near "$($sel_var"
+
+Scalar found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 92, near "$"$sel_var"
+	(Missing operator before $sel_var?)
+String found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 94, near "print ""
+  (Might be a runaway multi-line "" string starting on line 92)
+	(Missing semicolon on previous line?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 97, near "<option value=3>3</option"
+  (Might be a runaway multi-line // string starting on line 96)
+	(Missing operator before ption?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 98, near "<option value=5>5"
+	(Missing operator before 5?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 99, near "<option value=7>7</option"
+  (Might be a runaway multi-line // string starting on line 98)
+	(Missing operator before ption?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 100, near "<option value=9>9"
+	(Missing operator before 9?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 101, near "<option value=11>11</option"
+  (Might be a runaway multi-line // string starting on line 100)
+	(Missing operator before ption?)
+String found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 104, near "print ""
+  (Might be a runaway multi-line "" string starting on line 102)
+	(Missing semicolon on previous line?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 104, near "tr><td valign=top colspan=2><span class=sec_header>Minimal"
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 105, near "# print "<tr><td>Use WEP Encryption</td"
+  (Might be a runaway multi-line // string starting on line 104)
+	(Missing operator before td?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 105, near "0 checked"
+	(Missing operator before checked?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 106, near "print "	<tr><td valign=top>WEP Key</td"
+  (Might be a runaway multi-line // string starting on line 105)
+	(Do you need to predeclare print?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "Enter 10"
+	(Do you need to predeclare Enter?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "10 characters"
+	(Missing operator before characters?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "40 bit"
+	(Missing operator before bit?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "26 characters"
+	(Missing operator before characters?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "104 bit"
+	(Missing operator before bit?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 110, near "<br>Other"
+	(Missing operator before Other?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 111, near "<br>Leave"
+	(Missing operator before Leave?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 114, near "print "<tr><td>Broadcast"
+	(Do you need to predeclare print?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 116, near "0. Broadcast"
+	(Missing operator before Broadcast?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 117, near "1. Hide"
+	(Missing operator before Hide?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 118, near "<option value=2>2. Ignore Clients Configured with ANY</option"
+  (Might be a runaway multi-line // string starting on line 117)
+	(Missing operator before ption?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 119, near "<option value=3 select>3."
+	(Missing operator before 3.?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 119, near "3. Hide"
+	(Missing operator before Hide?)
+[11/Jun/2006:07:30:00 +0000] [84.57.145.212] /802.11/ : Perl execution failed : syntax error at /usr/share/webmin-1.170/802.11/index.cgi line 92, near "$"$sel_var"
+"use" not allowed in expression at /usr/share/webmin-1.170/802.11/index.cgi line 108, at end of line
+BEGIN not safe after errors--compilation aborted at /usr/share/webmin-1.170/802.11/index.cgi line 119.
+
+Scalar found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 92, near "$"$sel_var"
+	(Missing operator before $sel_var?)
+String found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 94, near "print ""
+  (Might be a runaway multi-line "" string starting on line 92)
+	(Missing semicolon on previous line?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 97, near "<option value=3>3</option"
+  (Might be a runaway multi-line // string starting on line 96)
+	(Missing operator before ption?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 98, near "<option value=5>5"
+	(Missing operator before 5?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 99, near "<option value=7>7</option"
+  (Might be a runaway multi-line // string starting on line 98)
+	(Missing operator before ption?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 100, near "<option value=9>9"
+	(Missing operator before 9?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 101, near "<option value=11>11</option"
+  (Might be a runaway multi-line // string starting on line 100)
+	(Missing operator before ption?)
+String found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 104, near "print ""
+  (Might be a runaway multi-line "" string starting on line 102)
+	(Missing semicolon on previous line?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 104, near "tr><td valign=top colspan=2><span class=sec_header>Minimal"
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 105, near "# print "<tr><td>Use WEP Encryption</td"
+  (Might be a runaway multi-line // string starting on line 104)
+	(Missing operator before td?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 105, near "0 checked"
+	(Missing operator before checked?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 106, near "print "	<tr><td valign=top>WEP Key</td"
+  (Might be a runaway multi-line // string starting on line 105)
+	(Do you need to predeclare print?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "Enter 10"
+	(Do you need to predeclare Enter?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "10 characters"
+	(Missing operator before characters?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "40 bit"
+	(Missing operator before bit?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "26 characters"
+	(Missing operator before characters?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 109, near "104 bit"
+	(Missing operator before bit?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 110, near "<br>Other"
+	(Missing operator before Other?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 111, near "<br>Leave"
+	(Missing operator before Leave?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 114, near "print "<tr><td>Broadcast"
+	(Do you need to predeclare print?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 116, near "0. Broadcast"
+	(Missing operator before Broadcast?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 117, near "1. Hide"
+	(Missing operator before Hide?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 118, near "<option value=2>2. Ignore Clients Configured with ANY</option"
+  (Might be a runaway multi-line // string starting on line 117)
+	(Missing operator before ption?)
+Number found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 119, near "<option value=3 select>3."
+	(Missing operator before 3.?)
+Bareword found where operator expected at /usr/share/webmin-1.170/802.11/index.cgi line 119, near "3. Hide"
+	(Missing operator before Hide?)
+[11/Jun/2006:07:31:27 +0000] [84.57.145.212] /802.11/ : Perl execution failed : syntax error at /usr/share/webmin-1.170/802.11/index.cgi line 92, near "$"$sel_var"
+"use" not allowed in expression at /usr/share/webmin-1.170/802.11/index.cgi line 108, at end of line
+BEGIN not safe after errors--compilation aborted at /usr/share/webmin-1.170/802.11/index.cgi line 119.
+
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+[11/Jun/2006:07:41:16 +0000] [84.57.145.212] /802.11/ : Perl execution failed : Can't find string terminator '"' anywhere before EOF at /usr/share/webmin-1.170/802.11/index.cgi line 114.
+
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+[11/Jun/2006:07:43:04 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:07:43:23 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:07:43:42 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:07:45:09 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:14:18 +0000] miniserv.pl started
+[11/Jun/2006:08:14:18 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local//lib/perl5/5.8.8/BSDPAN /mnt/usr/local//lib/perl5/site_perl/5.8.8/mach /mnt/usr/local//lib/perl5/site_perl/5.8.8 /mnt/usr/local//lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/i386-freebsd-64int /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[11/Jun/2006:08:29:58 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:30:31 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:33:18 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:33:24 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:35:35 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:35:40 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:39:06 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:39:21 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+/sbin/iwconfig: not found
+[11/Jun/2006:08:41:32 +0000] [84.57.145.212] /init/images/icon.gif : File not found
+[11/Jun/2006:08:55:43 +0000] [84.57.145.212] /net-simple/index.cgi : Perl execution failed : syntax error at /usr/share/webmin-1.170/net-simple/index.cgi line 112, near "])"
+
+[11/Jun/2006:08:55:51 +0000] [84.57.145.212] /net-simple/index.cgi : Perl execution failed : syntax error at /usr/share/webmin-1.170/net-simple/index.cgi line 112, near "])"
+
+[11/Jun/2006:08:55:53 +0000] [84.57.145.212] /net-simple/index.cgi : Perl execution failed : Unmatched right curly bracket at /usr/share/webmin-1.170/net-simple/index.cgi line 113, at end of line
+syntax error at /usr/share/webmin-1.170/net-simple/index.cgi line 113, near "}"
+
+[11/Jun/2006:09:01:22 +0000] [84.57.145.212] /net-simple/index.cgi : Perl execution failed : ./net-simple-lib.pl did not return a true value at /usr/share/webmin-1.170/net-simple/index.cgi line 5, <CONFIG> line 11.
+
+/sbin/iwconfig: not found
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+[11/Jun/2006:12:40:45 +0000] [84.57.145.212] /session_login.cgi : Missing Content-Type Header : Failed to exec /usr/share/webmin-1.170/session_login.cgi : Text file busy
+
+[11/Jun/2006:12:45:39 +0000] [84.57.145.212] /session_login.cgi : Perl execution failed : Unmatched right curly bracket at /usr/share/webmin-1.170/session_login.cgi line 166, at end of line
+syntax error at /usr/share/webmin-1.170/session_login.cgi line 166, near "}"
+
+/sbin/iwconfig: not found
+/sbin/iwconfig: not found
+[11/Jun/2006:19:03:00 +0000] [84.57.145.212] /net-simple/index.cgi : Perl execution failed : Undefined subroutine main::get_dns_servers at /usr/share/webmin-1.170/net-simple/index.cgi line 148
+
+[11/Jun/2006:19:12:20 +0000] [84.57.145.212] /net-simple/index.cgi : Missing Content-Type Header
+/sbin/iwconfig: not found
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+[11/Jun/2006:19:30:08 +0000] [84.57.145.212] /802.11/index.cgi : Perl execution failed : File read error in : No such file or directory at ../web-lib-props.pl line 60.
+
+/sbin/iwconfig: not found
+[01/Jan/1980:02:28:20 +0000] miniserv.pl started
+[01/Jan/1980:02:28:20 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:02:29:27 +0000] [192.168.3.100] /net-simple/index.cgi : Perl execution failed : unable to open /etc/resolv.conf file at ./net-simple-lib.pl line 17, <CONFIG> line 20.
+
+[01/Jan/1980:02:44:16 +0000] miniserv.pl started
+[01/Jan/1980:02:44:16 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:03:49:22 +0000] miniserv.pl started
+[01/Jan/1980:03:49:22 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:04:20:52 +0000] miniserv.pl started
+[01/Jan/1980:04:20:52 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+/sbin/iwconfig: not found
+[01/Jan/1980:04:54:32 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : File read error in : No such file or directory at ../web-lib-props.pl line 60.
+
+/sbin/iwconfig: not found
+[01/Jan/1980:04:57:54 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : File read error in : No such file or directory at ../web-lib-props.pl line 60.
+
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+[01/Jan/1980:04:59:44 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : undef is not a valid value for a property at ../web-lib-props.pl line 27
+
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+[01/Jan/1980:05:01:44 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : undef is not a valid value for a property at ../web-lib-props.pl line 27
+
+/sbin/iwconfig: not found
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+[01/Jan/1980:05:03:03 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : undef is not a valid value for a property at ../web-lib-props.pl line 27
+
+[01/Jan/1980:05:16:20 +0000] miniserv.pl started
+[01/Jan/1980:05:16:20 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:05:34:32 +0000] miniserv.pl started
+[01/Jan/1980:05:34:32 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+/sbin/iwconfig: not found
+sed: first RE may not be empty
+sed: first RE may not be empty
+sed: 1: "s/ath0:
+": unterminated substitute pattern
+sed: 1: "s/ath0:
+": unterminated substitute pattern
+[01/Jan/1980:22:31:55 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : undef is not a valid value for a property at ../web-lib-props.pl line 27
+
+[02/Jan/1980:00:12:16 +0000] [192.168.3.100] /802.11/index.cgi : Perl execution failed : undef is not a valid value for a property at ../web-lib-props.pl line 27
+
+[02/Jan/1980:01:11:12 +0000] miniserv.pl started
+[02/Jan/1980:01:11:12 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[02/Jan/1980:00:55:42 +0000] miniserv.pl started
+[02/Jan/1980:00:55:42 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[02/Jan/1980:05:30:39 +0000] miniserv.pl started
+[02/Jan/1980:05:30:39 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[02/Jan/1980:06:07:16 +0000] miniserv.pl started
+[02/Jan/1980:06:07:16 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[02/Jan/1980:07:56:12 +0000] miniserv.pl started
+[02/Jan/1980:07:56:12 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+Use of uninitialized value in string ne at /usr/share/webmin-1.170/Config/Properties.pm line 79.
+[02/Jan/1980:08:19:38 +0000] miniserv.pl started
+[02/Jan/1980:08:19:38 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[02/Jan/1980:08:23:33 +0000] miniserv.pl started
+[02/Jan/1980:08:23:33 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[02/Jan/1980:20:54:47 +0000] miniserv.pl started
+[02/Jan/1980:20:54:47 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /usr/share/webmin-1.170 /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[07/Apr/1980:23:07:54 +0000] miniserv.pl started
+[07/Apr/1980:23:07:54 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[16/Apr/1980:02:44:54 +0000] [192.168.3.150] /favicon.ico : File not found
+[29/Apr/1980:09:22:07 +0000] miniserv.pl started
+[29/Apr/1980:09:22:07 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[29/Apr/1980:09:22:20 +0000] [192.168.3.150] /favicon.ico : File not found
+[30/Apr/1980:04:52:08 +0000] [192.168.3.150] /favicon.ico : File not found
+[04/May/1980:08:54:50 +0000] [192.168.3.150] /favicon.ico : File not found
+[18/Oct/2006:15:16:00 +0000] miniserv.pl started
+[18/Oct/2006:15:16:00 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[18/Oct/2006:15:26:43 +0000] miniserv.pl started
+[18/Oct/2006:15:26:44 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[18/Oct/2006:16:27:28 +0000] miniserv.pl started
+[18/Oct/2006:16:27:28 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:03:07:30 +0000] miniserv.pl started
+[01/Jan/1980:03:07:30 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:03:24:05 +0000] miniserv.pl started
+[01/Jan/1980:03:24:05 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[13/Jan/1980:17:56:49 +0000] miniserv.pl started
+[13/Jan/1980:17:56:49 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[13/Jan/1980:18:02:39 +0000] miniserv.pl started
+[13/Jan/1980:18:02:39 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[16/Jan/1980:23:29:46 +0000] miniserv.pl started
+[16/Jan/1980:23:29:46 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[17/Jan/1980:01:27:12 +0000] miniserv.pl started
+[17/Jan/1980:01:27:12 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[17/Jan/1980:01:41:11 +0000] miniserv.pl started
+[17/Jan/1980:01:41:11 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[23/Feb/1980:18:42:33 +0000] miniserv.pl started
+[23/Feb/1980:18:42:33 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[23/Feb/1980:19:02:31 +0000] miniserv.pl started
+[23/Feb/1980:19:02:31 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[23/Feb/1980:19:10:40 +0000] miniserv.pl started
+[23/Feb/1980:19:10:40 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[23/Feb/1980:22:32:27 +0000] miniserv.pl started
+[23/Feb/1980:22:32:27 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[23/Feb/1980:23:36:42 +0000] miniserv.pl started
+[23/Feb/1980:23:36:42 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[24/Feb/1980:00:53:40 +0000] miniserv.pl started
+[24/Feb/1980:00:53:40 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[26/Feb/1980:00:49:08 +0000] miniserv.pl started
+[26/Feb/1980:00:49:08 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[26/Feb/1980:00:59:01 +0000] miniserv.pl started
+[26/Feb/1980:00:59:01 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[14/Mar/1980:21:28:13 +0000] miniserv.pl started
+[14/Mar/1980:21:28:13 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[15/Mar/1980:00:43:12 +0000] miniserv.pl started
+[15/Mar/1980:00:43:12 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[15/Mar/1980:01:16:02 +0000] miniserv.pl started
+[15/Mar/1980:01:16:02 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[15/Mar/1980:01:32:43 +0000] miniserv.pl started
+[15/Mar/1980:01:32:43 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[15/Mar/1980:01:55:05 +0000] miniserv.pl started
+[15/Mar/1980:01:55:05 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[15/Mar/1980:02:09:11 +0000] miniserv.pl started
+[15/Mar/1980:02:09:11 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[15/Mar/1980:02:14:50 +0000] miniserv.pl started
+[15/Mar/1980:02:14:50 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[16/Mar/1980:00:48:20 +0000] miniserv.pl started
+[16/Mar/1980:00:48:20 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[01/Jan/1980:00:02:04 +0000] miniserv.pl started
+[01/Jan/1980:00:02:04 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[04/Jan/1980:05:51:30 +0000] miniserv.pl started
+[04/Jan/1980:05:51:30 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+
+[08/Apr/2008:09:49:36 +0000] miniserv.pl started
+[08/Apr/2008:09:49:36 +0000] Perl module Authen::PAM needed for PAM is not installed : Can't locate Authen/PAM.pm in @INC (@INC contains: /mnt/usr/local/lib/perl5/5.8.8/BSDPAN /mnt/usr/local/lib/perl5/site_perl/5.8.8/mach /mnt/usr/local/lib/perl5/site_perl/5.8.8 /mnt/usr/local/lib/perl5/site_perl /mnt/usr/local/lib/perl5/5.8.8/mach /mnt/usr/local/lib/perl5/5.8.8 .) at (eval 3) line 1.
+BEGIN failed--compilation aborted at (eval 3) line 1.
+

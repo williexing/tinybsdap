@@ -1,0 +1,22 @@
+<table class=content border=0 width=100%>
+<tr><td colspan=2><!--SPECIAL_MESSAGE--></td></tr>
+<tr><th>Peer Nodes</th><th>Existing Peer Nodes</th></tr>
+<tr>
+	<td width=50%>
+		<table>
+			<tr><td colspan=2 class=sec_header>Enter New Peer Node</td></tr>
+			<form action=index.cgi method=post>
+			<tr><td>Peer MAC (<!--PEER_MAX-->)</td>	<td><input name=newpeermac>	</td></tr>
+			<tr><td>Peer IP (<!--PEER_MAX-->)</td>	<td><input name=newpeerip>	</td></tr>
+			<tr><td></td><td><input type=submit name=action value=set_peer>	<input type=hidden name=peermax value=<!--PEER_MAX-->></td></tr>
+			</form>
+		</table>
+	</td>
+	<td>
+		<table width=100%>
+		<!--EXISTING_PEERS-->
+		</table>
+	</td>
+</tr>
+
+</table>

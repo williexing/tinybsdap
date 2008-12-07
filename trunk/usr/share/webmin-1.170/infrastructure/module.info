@@ -1,0 +1,5 @@
+category=net
+longdesc=Infrastructure settings to configure the AP for functions such as roaming, routing and OTA
+desc=Infrastructure
+desc_de=Infrastructure
+name=Infrastructure

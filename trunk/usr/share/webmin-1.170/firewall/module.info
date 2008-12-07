@@ -1,0 +1,12 @@
+category=net
+desc_ru_SU=íÅÖÓÅÔÅ×ÏÊ ÜËÒÁÎ (firewall)
+longdesc=Configure a Linux firewall using iptables. Allows the editing of all tables, chains, rules and options.
+os_support=*-linux
+desc=Firewall
+desc_de=Firewall
+name=Firewall
+desc_ja_JP.euc=Linux ¥Õ¥¡¥¤¥ä¥¦¥©¡¼¥ë
+depends=1.170
+version=1.170
+desc_ru_RU=Ìåæñåòåâîé ıêğàí (firewall)
+desc_ca=Tallafocs Linux

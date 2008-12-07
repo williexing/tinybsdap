@@ -1,0 +1,9 @@
+---- Changes since 1.140 ----
+Added options for having the UID automatically computed based on the username, either by a checksum or using an external program.
+---- Changes since 1.150 ----
+When full user details are displayed, added checkboxes and a button for deleting multiple users at once.
+Added a similar button for deleting multiple groups at once too.
+User batch data can now be pasted into a text box, in addition to uploading a file or selecting a file on the server.
+When a user's home directory is a symlink, both the target of the link and the link itself are deleted.
+Added a Module Config option to set the default for the create, modify and delete in other modules options.
+

@@ -1,0 +1,16 @@
+cron_get_command=crontab -u USER -l
+cron_user_delete_command=crontab -r
+system_crontab=/etc/crontab
+vixie_cron=1
+cron_deny_file=/var/spool/cron/deny
+cronfiles_dir=/etc/cron.d
+cron_user_get_command=crontab -l
+cron_edit_command=crontab -u USER -e
+max_len=80
+cron_deny_all=2
+run_parts=run-parts
+cron_input=1
+cron_dir=/var/spool/cron/crontabs
+cron_user_edit_command=crontab -e
+cron_allow_file=/var/spool/cron/allow
+cron_delete_command=crontab -u USER -r

@@ -1,0 +1,89 @@
+index_title=Webmin Servers
+index_edit=edit
+index_noservers=No servers have been registered.
+index_add=Register a new server
+index_broad=Broadcast for servers
+index_findmsg=Click this button to automatically find any version 0.75 or above Webmin servers on your local network.
+index_scan=Scan for servers
+index_scanmsg=Click this button to check every address on the network $1 for Webmin servers of version 0.75 or above.
+index_return=servers
+index_host=Hostname and port
+index_desc=Description
+index_os=Server type
+index_group=Group
+index_none=&lt;None&gt;
+index_logout=logout
+
+edit_title=Edit Server
+create_title=Register Server
+edit_details=Server details
+edit_host=Hostname
+edit_port=Port
+edit_type=Server type
+edit_ssl=SSL server?
+edit_link=Link type
+edit_mode0=Normal link to server
+edit_mode1=Login via Webmin with
+edit_mode2=Login when icon is clicked on
+edit_user=username
+edit_pass=password
+edit_ecannot=You are not allowed to edit servers
+edit_desc=Description
+edit_desc_def=From hostname and port
+edit_group=Member of server groups
+edit_none=None
+edit_exists=Existing group
+edit_new=New group
+edit_fast=Make fast RPC calls?
+edit_auto=Decide automatically
+edit_status=Server status
+edit_timeout=Timeout connecting
+edit_failed=Failed to connect
+edit_baduser=Login rejected
+edit_invalid=User cannot do RPC
+edit_version=Running Webmin $1
+
+save_err=Failed to save server
+save_ehost=Missing or invalid hostname
+save_eport=Missing or invalid port
+save_euser=Missing username
+save_epass=Missing password
+save_egroup=Missing group name
+save_elogin=Invalid login or password to host
+
+find_title=Find Servers
+find_new=Found new server at $1
+find_already=Found known server at $1
+find_me=Found this server at $1
+find_escan=The network to scan must be a class C network address.
+find_none=No servers responsed to the scan.
+find_ecannot=You are not allowed to find servers
+find_scanning=Scanning for servers in network $1 ..
+find_broading=Broadcasting for servers on addresses $1 ..
+
+log_modify=Modified server $1
+log_create=Registered server $1
+log_delete=Deleted server $1
+log_find=Found server $1
+
+link_elogin=Failed to login to $1 as $2
+link_ecannot=You are not allowed to use this server
+link_essl=You do not have the perl Net::SSLeay library installed
+link_eautologin=Invalid login or password for $1. <a href='$2'>Click here</a> to try again.
+
+lib_other=Other
+
+acl_edit=Can edit servers?
+acl_find=Can find servers?
+acl_servers=Can use servers
+acl_sall=All Servers
+acl_ssel=Selected..
+
+login_title=Login to Server
+login_desc=You must supply a username and password to login to the Webmin server $1.
+login_header=Webmin authentication
+login_user=Username
+login_pass=Password
+login_login=Login
+
+this_server=this server

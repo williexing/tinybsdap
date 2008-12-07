@@ -1,0 +1,25 @@
+<table class=content border=0 width=100%>
+ <tr><td colspan=2><!--SPECIAL_MESSAGE--></td></tr>
+  <tr>
+  <td class=leftcontent>
+  <p class=info><!--info--></p>
+  <p>Note*: MAC addresses listed here will be prevented access for WPA-Authentication</p>
+  <p class=contentheader>Denied Clients MAC List</p>
+  <form action=mac.cgi method=post>	
+  <table>
+  <tr><th>MAC Address</th></tr>
+  <!--MAC-->
+</table>
+<table>
+
+    <p class=contentheader>Add New MAC</p>		
+  <form action=mac.cgi method=post>
+  <br>
+  <tr><td>MAC Address</td><td><input name="mac"></td><td>  e.g. 00:04:bd:af:57:21 </td></tr>
+  <tr><td></td><td><input type=submit name=action value="Add"></td></tr>
+  </form>
+
+</table>
+  <p>Note*: For the MAC List getting updated, you need to Reload
+  from the Advaned Configuration Page</p>
+</table>

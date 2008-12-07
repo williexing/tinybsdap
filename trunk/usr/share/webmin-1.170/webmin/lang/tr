@@ -1,0 +1,244 @@
+index_title=Webmin Yapýlandýrmasý
+index_return=webmin yapýlandýrmasý
+
+access_title=IP Giriþ Kontrolü
+access_desc=Webmin Sunucusu bu formu kullanarak sadece belirtilen IP adreslerinden girilmesini saðlayabilir. Buraya bilgiler makine isimleri (gelecek.com.tr gibi) veya IP numarasý/Alt að maskesi (212.45.76.93/255.255.255.0 gibi) þeklinde girilmiþ olmalýdýr.Eðer internetten baðlanmak isterseniz güvenli olmasý açýsýndan sadece belirli IP'lerden girilmesini saðlayabilirsiniz. Aksi takdirde baþka birisi sizin þifrenizi öðrendiðinde sisteminizin kontrolünü ele geçirecektir. 
+access_header=Giriþ Kontol
+access_all=Bütün adreslerden kabul et
+access_allow=Sadece listedeki adreslerden kabul et
+access_deny=Listedeki adresleri kabul etme
+access_err=Giriþ listesinin güncellenmesinde hata oluþtu
+access_enone=Adresler girilmedi
+access_enet='$1' geçerli bir að adresi deðil
+access_emask='$1' geçerli bir að maskesi deðil
+access_eip='$1' tamamlanmýþ bir að ya da IP adresi deðil
+access_ehost='$1' için IP adresi aranmasýnda hata oluþtu
+access_eself=Mevcut IP adresinizden ($1) giriþleri engellemek istermisiniz?
+
+bind_title=Port ve Adres
+bind_desc=Eðer Webmin'in makinesi çoklu IP adreslerinde çalýþýyorsa, sunucunun bu form ile sadece bir IP adresinden dinlenilmesi saðlanabilir.  Eðer birden fazla ethernet kartýna sahipseniz bu seçimi yapýn.
+bind_header=IP Adresi ve Port
+bind_ip=IP Adresinde Dinle
+bind_all=Hepsi
+bind_port=Portu dinle
+bind_err=Adresin deðiþtirilmesinde hata oluþtu
+bind_eip='$1' için IP adresinin alýnmasýnda hata oluþtu
+bind_eassign='$1' adresi bu sisteme atanamaz.
+bind_eport=Port $1 her zaman kullanýmda.
+
+log_title=Kayýt
+log_desc=Webmin, Web sunucusu kayýtlarýnýn standart Apache kayýt dosyasý þeklinde yazmasý için yapýlandýrýlmýþtýr. Kayýt 'Açýk' olduðunda, IP adresi ve makine adlarýnýn kaydedilip kaydedilmeyeceðini ve kayýt dosyasýnýn hangi sýklýkla silineceðini seçebilirsiniz. 
+log_desc2=Kayýt tutma aktif hale getirildiðinde, Webmin kullanýcý iþlemleri hakkýnda daha detaylý bilgi tutacaktýr. Bu log Webmin Ýþlem Kaydý modülünde görüntülenebilir ve analiz edilebilir.
+log_header=Web Sunucusu Kayýtlarý
+log_disable=Kaydý Kapa
+log_enable=Kaydý Aç
+log_resolv=Ýsmi çözümlenen makineleri kaydet
+log_clear=Kayýt dosyasýný her $1 saatte bir temizle
+log_uall=Bütün kullanýcýlar için kayýt iþlemleri
+log_users=Bu kullanýcýlar için kayýtlar ..
+log_mall=Bütü modüllerdeki kayýt iþlemleri
+log_modules=Bu modül için kayýtlar
+log_files=Her iþlemde dosyalarda kayýt deðiþiklikleri yapýlsýn
+log_err=Kayýt seçeneklerinin kaydedilmesinde hata oluþtu
+log_ehours='$1' geçerli bir saat sayýsý deðildir
+log_ediff=Sisteminiz kayýt dosyasý deðiþiklikleri için kullanýlacak olan $1 komutunu içermiyor.
+
+
+proxy_title=Proxy Sunucularý
+proxy_desc=Webmin bir tür güvenlik duvarý arkasýnda çalýþýyorsa, proxy sunucunuzu web ve ftp sitelerine giriþler için yapýlandýrmanýz gerekmektedir. 
+proxy_header=Proxy Sunucularý
+proxy_http=HTTP proxy
+proxy_ftp=FTP proxy
+proxy_none=Hiçbiri
+proxy_nofor=Bu adres için proxy kullanma: 
+proxy_err=Proxy'lerin kaydedilmesinde hata oluþtu
+proxy_ehttp=HTTP proxy sunucusu bir URL olarak girilmelidir
+proxy_eftp=FTP proxy sunucusu bir URL olarak girilmelidir
+
+ui_title=Kullanýcý Arayüzü
+ui_desc=Bu form bütün modüller için kullanýcý arayüzlerini deðiþtirmek için kullanýlýr. Renkleri girdiðinizde standart RGB renk sistemi olarak girmelisiniz. Girilen deðerler 00 ve FF arasý hex (onaltýlý) deðerleri olmalýdýr.
+ui_header=Kullanýcý Arayüzü Seçenekleri
+ui_default=Öntanýmlý
+cs_page=Sayfa arkasý rengi
+cs_text=Normal yazý
+cs_table=Tablo arka fonu
+cs_header=Tablo baþlýðý
+cs_link=Yazý satýrý
+ui_texttitles=Baþlýklar yazý olarak görüntülensin mi?
+ui_err=Renklerin kaydedilmeinde hata oluþtu
+ui_ered='$1' için yanlýþ kýrmýzý deðeri
+ui_egreen='$1' için yanlýþ yeþil deðeri
+ui_eblue='$1' için yanlýþ mavi deðeri
+
+mods_title=Webmin Modülleri
+mods_desc1=Webmin modülleri kurulumdan sisteme eklenmiþlerdir. Modüller tipik olarak <tt>.wb</tt> dosyasý þeklindedir.
+mods_install=Modül Kur
+mods_local=Yerel dosyadan
+mods_uploaded=Yüklenilen dosyadan
+mods_ftp=Ftp ya da http adresinden 
+mods_installok=Dosyadan Modül Kur
+mods_desc2=Eðer bir modülün farklý yapýlandýrmalarý sahip birden çok kopyasýna sahipseniz, form mevcut modülün kopyasýný çýkarmanýza izin verir.
+mods_clone=Modül Kopyala
+mods_cname=Kopya modülü
+mods_cnew=Kopyalanmýþ modül isimi
+mods_cloneok=Modül Kopyala
+mods_desc3=Varolan modüller ve kopya modüller takip eden form sayesinde silinebilir. Bir modül silindiðinde tekrar kullanýlmadan önce yeniden kurulmalýdýr. Bir modül diðer modüller ona baðlýysa silinemez.
+mods_delete=Modülleri Sil
+mods_deleteok=Seçilen Modülleri Sil
+
+install_err1=$1'den modül kurulmasýnda hata oluþtu
+install_efile=Dosya mevcut deðil
+install_err2=Yüklenen dosyadan kurulumda hata oluþtu
+install_ebrowser=Tarayýcýnýz dosya yüklemelerini desteklemiyor
+install_err3=$1'den modül kurulmasýnd hata oluþtu
+install_eurl=Yanlýþ URL adresi
+install_etar=Geçerli bir modül dosyasý deðildir : $1
+install_einfo=$1 modülü kayýptýr.bilgi dosyasý
+install_enone=Dosya herhangi bir modülü içermemektedir
+install_eos=$1 modülü bu iþletim sistemini desteklememektedir ($2 $3)
+install_ever=$1 modülü Webmin'in $2 veya daha üstü sürümlerine ihtiyaç duymaktadýr
+install_edep=$1 modülü $2 modülüne ihtiyaç duymaktadýr
+install_eextract=Açýlýmda hata oluþtu : $1
+install_title=Modül Kur
+install_desc=Takip eden modüller baþarýyla kuruldu ve giriþ kontrol
+listesine yerleþtirildi :
+install_line=$1, $2'de ($3 Kb)
+install_ecomp=Dosya sýkýþmýþ, fakat $1 komutu sisteminizde bulunmuyor.
+install_ecomp2=Dosyanýn açýlmasýnda hata oluþtu: $1
+install_egzip=Dosya gzip'lenmiþ, fakat sisteminizde $1 komutu bulunmuyor.
+install_egzip2=Dosyanýn açýlmasýnda hata oluþtu: $1
+
+clone_err=Modülün kopyalanmasýnda hata oluþtu
+clone_elink=Sembolik linkte hata oluþtu : $1
+clone_ecopy=Kopyalama yapýlandýrýlmasýnda hata oluþtu : $1
+clone_desc=$1'in kopyasý
+
+delete_err=Modüllerin silinmesinde hata oluþtu
+delete_edep=$1 modülü silinemiyor.Çünkü $2 modülü ona ihtiya duymaktadýr.
+delete_desc1=$1 ($2'nin kopyasý)
+delete_desc2=$1, $2'de ($3 Kb)
+delete_title=Modülleri Sil
+delete_msg=Takip eden modüller Webmin'inizden baþarýyla silinmiþtir:
+
+os_title=Ýþletim Sistemi
+os_desc=Eðer makinenizin iþletim sistemini yeni bir sürümüne güncellediyseniz bu modül sayesinde, Webmin'in kullandýðý ayarlarý deðiþtirmesi için aþaðýdaki listeden kullanýlan iþletim sistemini deðiþtirebilirsiniz.
+os_desc2=Webmin'in çalýþtýrdýðý programlarýn yollarýný ve paylaþýlmýþ kütüphane yollarýný deðiþtirebilirsiniz.
+os_header=Makine Ýþletim Sistemi
+os_curros=Mevcut iþletim sistemi
+os_currver=Mevcut iþletim sistemi sürümü
+os_new=Yeni iþletim sistemi sürümü
+os_path=Program arama yolu (PATH)
+os_ld_path=Kütüphane arama yolu (lib)
+
+lang_title=Dil
+lang_title2=Webmin Dili
+lang_lang=Görüntüleme dili
+lang_intro=Bu sayfada Webmin'in baþlýklar, komutlar ve mesajlar için kullandýðý dili seçebilirsiniz.
+lang_ok=Dili Seçiniz
+
+ssl_title=SSL Þifrelemesi
+ssl_desc1=Webmin'in çalýþmasý için SSLeay Perl modülünün kurulu olmasý gerekmektedir.Bunu kullandýðýnýzda Webmin SSL tabanlý tarayýcý ve bilgisayar arasýndaki iletiþimi kurmaktadýr.Eðer Webmin sunucunuza internetten ulaþacaksanýz kesinlikle Webmin þifrenizi ataklara karþý korumak için SSL kullanmalýsýnýz.
+ssl_desc2=Uyarý! SSL desteðini sadece tarayýcýnýz destekliyorsa ve tarayýcýnýzla Webmin makineniz arasýnda firewall korumasý yoksa aktif hale getiriniz.
+ssl_header=SSL Support
+ssl_enable=Enable SSL support, if available
+ssl_disable=Disable SSL support, even if available
+
+startpage_title=Indeks Sayfasý Seçenekleri
+startpage_intro=Bu sayfa ile indeks sayfasýndaki kolon baþýna kaç tane simge istediðinizi belirleyebilirsiniz.
+startpage_tabs=Modüller sýnýflandýrýlsýn mý?
+startpage_nocol=Kolon sayýsý
+startpage_alt=Alternatif baþlýklar kullanýlsýn mý? 
+startpage_ecols='$1' geçerli kolon sayýsý deðildir
+startpage_gotoone=Eðer kullanýcý sadece bir tane modüle sahipse, doðrudan modüle gidilsin mi ?
+
+upgrade_title=Webmin Güncelleþtir
+upgrade_desc=Bu sayfa varolan Webmin'i daha yeni bir sürümüne güncellemek için kullanýlýr.Yerel dosyadan, yüklenen dosyadan veya <a href="www.webmin.com">www.webmin.com</a> adresinden en son sürümünü kurabilirsiniz. Eðer elle yapacaksanýz bütün yapýlandýrma ayarlarý ve üçüncü parti modüller saklanacaktýr.
+upgrade_descrpm=
+upgrade_local=Yerel dosyadan
+upgrade_uploaded=Yüklenilen dosyadan
+upgrade_ftp=En son sürümünü www.webmin.com'dan
+upgrade_ok=Webmin'i güncelleþtir
+upgrade_err1=$1'den güncellemede hata oluþtu.
+upgrade_err2=Yüklenilen dosyadan güncellemede hata oluþtu.
+upgrade_err3=www.webmin.com'dan güncellemede hata oluþtu.
+upgrade_efile=Dosya mevcut deðil
+upgrade_ebrowser=Tarayýcýnýz dosya yüklemeyi destelemiyor
+upgrade_eversion=$1 sürümünü indiremezsiniz
+upgrade_erpm=Geçerli bir webmin RPM dosyasý deðildir
+upgrade_egunzip=Sisteminiz <tt>gunzip</tt> komutunu içermiyor
+upgrade_etar=Geçerli bir webmin tar dosyasý deðildir
+upgrade_setup=Webmin'in güncellenmesi için install.sh programcýðý çalýþtýrýlýyor. Webmin'in güncellenmesiiçin bir süre beklemelisiniz.
+upgrade_setuprpm=RPM, Webmin'i güncelliyor...Devam etemeden önce birkaç dakika iþlemin bitmesini bekleyiniz
+upgrade_setuppackage=pkgadd, Webmin'i güncelliyor...Devam etemeden önce birkaç dak iþlemin bitmesini bekleyiniz
+upgrade_esolaris=Webmin'in güncelleme özelliði bir Solaris paketinden yapýlamaz. Lütfen Webmin'i elle güncelleyiniz
+
+ca_title=Sertifika Onaylama
+ca_old=Mevcut Sertifika 
+ca_header1=Yeni bir CA sertifikasý oluþtur
+ca_header2=CA sertifikasýný deðiþtir
+ca_newmsg1=Webmin sertifika onaylamasýna her zaman sahiptir.Bu formu kullanarak tekrar kurabilirsiniz, ama bazý sertifikalar kullaným için yayýnlandýðý için çalýþmayabilirler.
+ca_newmsg2=Bu form Webmin sunucusuna bir sertifika onaylama(CA) kurmak için hazýrlanmýþtýr.Böylece Webmin kullanýcýlarý sunucuya giriþ yapmadan kendilerini tanýtabilirler.
+ca_cn=Onay Ýsmi
+ca_email=E-posta Adresi
+ca_ou=Bölüm
+ca_o=Organizasyon
+ca_sp=Eyalet
+ca_c=Bölge kodu
+ca_create=Sertifika onaylamayý kur
+ca_oldmsg1=Bu sunucudaki CA sertifikasý aþaðýda gösterildiði gibi kullanýlmaktadýr.Bu sertifikayý baþka biriyle deðiþtirebiliriniz, ama sertifikalardan bazýlarý kullanýcýlara her zaman yayýnlandýðýndan iyi çalýþmayabilir. 
+ca_oldmsg2=Baþka bir Webmin sunucusunda bir CA her zaman kurulu ise oradaki sertifikayý aþaðýdakinin yerine onu yeni bir tane olarak yapýþtýrabilirsiniz.Bu diðer sunucudaki kullanýcýlarýn bu sunucu ile iyi bir þekilde çalýþmasýný saðlar.
+ca_err=Sertifika onaylamasýnýn kaydedilmesinde hata oluþtu
+ca_setupok=Sertifika onaylamanýz baþarý ile kuruldu.Kullanýcýlar 'Webmin Kullanýcýlarý' modülünü kullanarak sertifikalarýný alabilirler
+ca_stop=Sertifika onaylamasý kapatýldý
+ca_stopmsg=Bu butonu týklayarak mevcut sertifikalarý onaylamak ya da yeni birini daðýtmak için Webmin'i durdurabilirsiniz.
+ca_stopok=Sertifika onaylamanýz baþarýla kapatýldý
+ca_eminiserv=SSL istemci sertifikalarý sadece miniserv altýnda desteklenmektedir
+ca_eversion=Sisteminizde kurulu olan Perl Net::SSLeay modülünün bu sürümü SSL istemci sertifikalarýný desteklememektedir.
+ca_essleay=SSL yönetim komutu $1 sisteminizde bulunmamaktadýr.'Webmin Kullanýcýlarý' modülü yapýlandýrmasýný deðiþtirmeniz gerekmektedir
+ca_essl=SSL sertifikasyonu sadece SSL modunda çalýþan web sunucusu olduðu zaman kurulabilir.
+
+session_title=Onaylama
+session_desc1=Aktif hale getirildiðinde, Webmin, ayný kullanýcýnýn her baþarýsýz giriþ denemelerinde þifre kýrma ataklarýna karþý korunacaktýr.
+session_desc2=Oturum onaylamasý aktif olduðunda, kullanýcý giriþleri Webmin tarafýndan izlenecek, bir gecikme olduðu anlaþýldýðý zaman ise sistemden çýkarýlacaktýr. Oturum onaylamasýný açar veya kapatýrsanýz sistemdeki bütün kullanýcýlar tekrar sisteme giriþ yapmak zorunda kalacaktýr.
+session_header=Onaylama ve oturum seçenekleri
+session_pdisable=Þifre gecikme süreleri kapalý
+session_penable=Þifre gecikme süreleri aktif
+session_blockhost=$2 saniyede $1'den çok baþarýsýz giriþten sonra makinenin giriþini engelle.
+session_syslog=Engellenen makineleri <tt>syslog</tt>a kayýt tut.
+session_disable=Oturum onaylamasýný kapat
+session_enable=Oturum onaylamasýný aç
+session_logout=Ýnaktif durumda $1 dakikadan sonra otomatik sistemden at.
+session_locking=Webmin'de kilitleme açýk
+session_err=Oturum kilitlenmesinin kaydedilmesinde hata oluþtu
+session_elogouttime=Kayýp ya da yanlýþ gecikme süresi
+session_eblockhost_time=Kayýp ya da yanlýþ engelleme süresi
+session_eblockhost_failures=Kayýp ya da yanlýþ engelleme giriþi
+
+assignment_title=Modülleri Sýnýflandýr
+assignment_header=Modül kategorileri sýnýflandýrmasý
+
+categories_title=Kategorileri Deðiþtir
+categories_header=Kategory ID ve Açýklama
+categories_new=Yeni Kategori
+categories_add=Ekle
+
+log_access=IP Giriþ Kontrolü deðiþtirildi
+log_bind=Port ve adres deðiþtirildi
+log_log=Kayýt seçenekleri deðiþtirildi
+log_proxy=Proxy sunucularý deðiþtirildi
+log_ui=Kullanýcý arayüz seçenekleri deðiþtirildi
+log_install=$1 modülü kuruldu
+log_clone=$1 modülü $2'ye kopyalandý
+log_delete=$1 modülü silindi
+log_os=Ýþletim sistemi deðiþtirildi
+log_lang=Genel dil deðiþtirildi
+log_startpage=indek sayfasý seçenekleri deðiþtirildi
+log_upgrade=Webmin sürüm $1'e güncellendi
+log_session=Onaylama seçenekleri deðiþtirildi
+log_ssl=SSL þifreleme modu deðiþtirildi
+log_setupca=Sertifika onaylamasýný kur
+log_changeca=Sertifika onaylamasý deðiþtirildi
+log_stopca=Sertifika onaylamasý deðiþtirildi
+log_assignment=Modül kategorileri deðiþtirildi
+log_categories=Kategori isimleri deðiþtirildi
+

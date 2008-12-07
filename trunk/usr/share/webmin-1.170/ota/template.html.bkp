@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Wapsol Industrial Wireless Networks - Config Menue</title> 
+	<link rel=stylesheet type=text/css href=/wifimax/styles.css>
+</head> 
+<body>	
+	<table width=70% class=main>
+	<tr>	<td><a href=http://www.wapsol.de/><img src=/wifimax/.img/wapsol0_small.png border=0></a></td>
+		<td class=headermacip colspan=3><!--HEADER_MAC_IP--><br></td>
+	</tr>
+	<tr><td class=header><!--HEADER--></td></tr>
+	<tr>
+		<td class=nav width=25%><a href=/cgi-bin/tbridge.pl>Transitive Bridging</a></td>
+		<td class=nav width=25%><a href=/cgi-bin/alerts.pl>Alerts</a></td>
+		<td class=nav width=25%><a href=/cgi-bin/wanconfig.pl>WAN Config</a></td>
+		<td class=nav width=25%><a href=/cgi-bin/hardware.pl>Hardware</a></td>
+	</tr>
+	<tr><td class=content colspan=4>&nbsp;<!--CONTENT--></td></tr>
+	<tr><td class=footer colspan=4>&copy; 2001-2003 Wapsol GmbH. All rights reserved.</td></tr>
+	</table>
+
+	<!--FOOTER-->
+
+</body> </head>

@@ -1,0 +1,2 @@
+root: webminlog webmin servers acl init proc cron inittab man dhcpd firewall secureap-0.52 ota 802.11 adsl-client net net-simple file maintenance infrastructure useradmin
+admin: dhcpd secureap-0.52 802.11 net-simple maintenance

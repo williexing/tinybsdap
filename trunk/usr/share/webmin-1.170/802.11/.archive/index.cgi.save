@@ -1,0 +1,66 @@
+#!/usr/bin/perl
+
+require './wireless-lib.pl';
+require '../web-lib.pl';
+
+&ReadParse();
+&header($text{'index_title'}, undef, "intro", 1, 1, 0,
+        &help_search_link("iptables", "man", "doc"));
+print "<hr>\n";
+
+my $action	= $in{action};
+my $ssid	= $in{ssid};
+my $channel	= $in{channel};
+my $txpower	= $in{txpower};
+my $bcast_ssid	= $in{bcast_ssid};
+
+if ($action eq "Submit")
+{
+	st_set_param('essid', $ssid);
+	st_set_param('channel', $channel);
+	st_set_param('txpower', $txpower);
+
+	st_set_bcast_ssid($bcast_ssid);
+
+	print "<span class=sys_msg>802.11 parameters updated successfully!</span>";
+}
+
+# my $current_ssid = st_get_ssid();
+my $current_ssid = st_get_param('essid');
+my $iwconfig_out = st_get_iwconfig();
+
+print "<table><form action=index.cgi method=post>";
+print "<tr><td width=25%>ESSID</td>
+	<td><input name=ssid value=$current_ssid></td>";
+print "<tr><td>TX-Power</td>
+	<td><select name=txpower>
+		<option value=100mW selected>100mW | 20db</option>
+		<option value=50mW>50mW | 17db</option>
+		<option value=25mW>25mW | 14db</option>
+		<option value=10mW>10mW | 10db</option>
+	</td>";
+print "<tr><td>Channel</td>
+	<td><select name=channel>
+		<option value=1>1</option>
+		<option value=3>3</option>
+		<option value=5>5</option>
+		<option value=7>7</option>
+		<option value=9>9</option>
+		<option value=11>11</option>
+	</td>";
+print "<tr><td valign=top colspan=2><span class=sec_header>Minimal Security</span></td>";
+print "<tr><td>Broadcast SSID</td>
+	   <td><select name=bcast_ssid>
+		<option value=0>0. Broadcast SSID</option>
+		<option value=1>1. Hide SSID in Beacon Frames</option>
+		<option value=2>2. Ignore Clients Configured with ANY</option>
+		<option value=3>3. Hide SSID in Beacons &amp; Ignore ANY</option>
+		</select></td>";
+print "<tr><td valign=top>
+		<input type=submit name=action value=Submit></td>
+	   <td><pre>$iwconfig_out</pre></td>";
+print "</form></table>";
+
+print "<hr>\n";
+&footer("/", $text{'index'});
+

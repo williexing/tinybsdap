@@ -1,0 +1,301 @@
+Sun Solaris			2.5.1	solaris		2.5.1	$uname =~ /SunOS.*\s5\.5\.1\s/i
+Sun Solaris			2.6	solaris		2.6	$uname =~ /SunOS.*\s5\.6\s/i
+Sun Solaris			7	solaris		7	$uname =~ /SunOS.*\s5\.7\s/i
+Sun Solaris			8	solaris		8	$uname =~ /SunOS.*\s5\.8\s/i
+Sun Solaris			9	solaris		9	$uname =~ /SunOS.*\s5\.9\s/i
+Sun Solaris			10	solaris		10	$uname =~ /SunOS.*\s5\.10\s/i
+Caldera OpenLinux eServer	2.3	open-linux	2.3e	$etc_issue =~ /OpenLinux.*eServer.*\n.*\s2\.3\s/i
+Caldera OpenLinux		2.3	open-linux	2.3	$etc_issue =~ /OpenLinux.*\n.*\s2\.3\s/i
+Caldera OpenLinux		2.4	open-linux	2.4	$etc_issue =~ /OpenLinux.*\n.*\s2\.4\s/i
+Caldera OpenLinux		2.5	open-linux	2.5	$etc_issue =~ /OpenLinux.*\n.*\s2\.5\s/i || $etc_issue =~ /Caldera.*2000/i
+Caldera OpenLinux		3.1	open-linux	3.1e	$etc_issue =~ /OpenLinux.*3\.1/i
+Redhat Linux			4.0	redhat-linux	4.0
+Redhat Linux			4.1	redhat-linux	4.1
+Redhat Linux			4.2	redhat-linux	4.2
+Redhat Linux			5.0	redhat-linux	5.0	$etc_issue =~ /red\s*hat.*\s5\.0/i
+Redhat Linux			5.1	redhat-linux	5.1	$etc_issue =~ /red\s*hat.*\s5\.1/i
+Redhat Linux			5.2	redhat-linux	5.2	$etc_issue =~ /red\s*hat.*\s5\.2/i
+Redhat Linux			6.0	redhat-linux	6.0	$etc_issue =~ /red\s*hat.*\s6\.0/i || `cat /etc/redhat-release 2>/dev/null` =~ /6\.0/
+Redhat Linux			6.1	redhat-linux	6.1	$etc_issue =~ /red\s*hat.*\s6\.1/i || `cat /etc/redhat-release 2>/dev/null` =~ /6\.1/
+Redhat Linux			6.2	redhat-linux	6.2	$etc_issue =~ /red\s*hat.*\s6\.2/i || `cat /etc/redhat-release 2>/dev/null` =~ /6\.2/
+Redhat Linux			7.0	redhat-linux	7.0	$etc_issue =~ /red\s*hat.*\s7\.0/i || `cat /etc/redhat-release 2>/dev/null` =~ /7\.0/
+Redhat Linux			7.1	redhat-linux	7.1	$etc_issue =~ /red\s*hat.*\s7\.1/i || `cat /etc/redhat-release 2>/dev/null` =~ /7\.1/
+Redhat Linux			7.2	redhat-linux	7.2	$etc_issue =~ /red\s*hat.*\s7\.2/i || `cat /etc/redhat-release 2>/dev/null` =~ /7\.2/
+Redhat Linux			7.3	redhat-linux	7.3	$etc_issue =~ /red\s*hat.*\s7\.3\s/i || `cat /etc/redhat-release 2>/dev/null` =~ /7\.3\s/ || $etc_issue =~ /VMware\s+ESX\s+Server\s+2\.0/i
+Redhat Linux			8.0	redhat-linux	8.0	$etc_issue =~ /red\s*hat.*\s8\.0\s/i || `cat /etc/redhat-release 2>/dev/null` =~ /\s8\.0\s/
+Redhat Linux			9.0	redhat-linux	9.0	$etc_issue =~ /red\s*hat.*\s9(\.0)?\s/i || `cat /etc/redhat-release 2>/dev/null` =~ /red\s*hat.*\s9(\.0)?\s/i
+Redhat Linux			Fedora 1	redhat-linux	10.0 $etc_issue =~ /red\s*hat.*\s10(\.0)?\s/i || `cat /etc/redhat-release /etc/fedora-release 2>/dev/null` =~ /red\s*hat.*\s10(\.0)?\s/i || `cat /etc/redhat-release /etc/fedora-release 2>/dev/null` =~ /Fedora.*\s1\s/i
+Redhat Linux			Fedora 2	redhat-linux	11.0 `cat /etc/redhat-release /etc/fedora-release 2>/dev/null` =~ /Fedora.*(\s2\s)|(FC2)/i || `cat /etc/redhat-release /etc/fedora-release 2>/dev/null` =~ /X\/OS.*release\s2\.0\s/i
+Redhat Linux			Fedora 3	redhat-linux	12.0 `cat /etc/redhat-release /etc/fedora-release 2>/dev/null` =~ /Fedora.*(\s3\s)|(FC3)/i || `cat /etc/redhat-release /etc/fedora-release 2>/dev/null` =~ /X\/OS.*release\s3\.0\s/i
+Redhat Linux			2.1AS	redhat-linux	7.3	`cat /etc/redhat-release 2>/dev/null` =~ /(Advanced\s+Server.*2\.1)|(AS.*2\.1)/i
+Redhat Linux			2.1ES	redhat-linux	7.3	`cat /etc/redhat-release 2>/dev/null` =~ /ES.*2\.1/
+Redhat Linux			2.1WS	redhat-linux	7.3	`cat /etc/redhat-release 2>/dev/null` =~ /WS.*2\.1/
+Redhat Linux			3.0AS	redhat-linux	10.0	`cat /etc/redhat-release 2>/dev/null` =~ /(3\.0AS)|(2\.9\.5AS)|(AS\s+release\s+3)/i
+Redhat Linux			3.0ES	redhat-linux	10.0	`cat /etc/redhat-release 2>/dev/null` =~ /ES\s+release\s+3/ || `cat /etc/whitebox-release 2>/dev/null` =~ /White\s+Box\s+Enterprise\s+Linux\s+release\s+3/i || `cat /etc/redhat-release 2>/dev/null` =~ /Tao\s+Linux\s+release\s+1/ || `cat /etc/redhat-release 2>/dev/null` =~ /CentOS\s+release\s+3/
+Redhat Linux			3.0WS	redhat-linux	10.0	`cat /etc/redhat-release 2>/dev/null` =~ /WS\s+release\s+3/
+Redhat Linux			Desktop 3	redhat-linux	10.0	`cat /etc/redhat-release 2>/dev/null` =~ /Desktop\s+release\s+3/i
+Slackware Linux			3.2	slackware-linux	3.2
+Slackware Linux			3.3	slackware-linux	3.3
+Slackware Linux			3.4	slackware-linux	3.4
+Slackware Linux			3.5	slackware-linux	3.5
+Slackware Linux			3.6	slackware-linux	3.6
+Slackware Linux			4.0	slackware-linux	4.0
+Slackware Linux			7.0	slackware-linux	7.0	`cat /etc/slackware-version 2>/dev/null` =~ /7\.0/
+Slackware Linux			7.1	slackware-linux	7.1	`cat /etc/slackware-version 2>/dev/null` =~ /7\.1/
+Slackware Linux			8.0	slackware-linux	8.0	`cat /etc/slackware-version 2>/dev/null` =~ /8\.0/
+Slackware Linux			8.1	slackware-linux	8.1	`cat /etc/slackware-version 2>/dev/null` =~ /8\.1/
+Slackware Linux			9.0	slackware-linux	9.0	`cat /etc/slackware-version 2>/dev/null` =~ /9\.0/
+Slackware Linux			9.1	slackware-linux	9.1	`cat /etc/slackware-version 2>/dev/null` =~ /9\.1/
+Slackware Linux			10.0	slackware-linux	10.0	`cat /etc/slackware-version 2>/dev/null` =~ /10\.0/
+Debian Linux			1.3	debian-linux	1.3
+Debian Linux			2.0	debian-linux	2.0	$etc_issue =~ /Debian.*\s2\.0\s/i
+Debian Linux			2.1	debian-linux	2.1	$etc_issue =~ /Debian.*\s2\.1\s/i
+Debian Linux			2.2	debian-linux	2.2	$etc_issue =~ /Debian.*\s2\.2\s/i
+Debian Linux			3.0	debian-linux	3.0	$etc_issue =~ /Debian.*\s3\.0\s/i
+Debian Linux			3.1	debian-linux	3.1	$etc_issue =~ /Debian.*\s3\.1\s/i
+SuSE Linux			5.1	suse-linux	5.1
+SuSE Linux			5.2	suse-linux	5.2
+SuSE Linux			5.3	suse-linux	5.3
+SuSE Linux			6.0	suse-linux	6.0	`cat /etc/SuSE-release 2>/dev/null` =~ /6\.0/ || $etc_issue =~ /SuSE\s+Linux\s+6\.0\s/i
+SuSE Linux			6.1	suse-linux	6.1	`cat /etc/SuSE-release 2>/dev/null` =~ /6\.1/ || $etc_issue =~ /SuSE\s+Linux\s+6\.1\s/i
+SuSE Linux			6.2	suse-linux	6.2	`cat /etc/SuSE-release 2>/dev/null` =~ /6\.2/ || $etc_issue =~ /SuSE\s+Linux\s+6\.2\s/i
+SuSE Linux			6.3	suse-linux	6.3	`cat /etc/SuSE-release 2>/dev/null` =~ /6\.3/ || $etc_issue =~ /SuSE\s+Linux\s+6\.3\s/i
+SuSE Linux			6.4	suse-linux	6.4	`cat /etc/SuSE-release 2>/dev/null` =~ /6\.4/ || $etc_issue =~ /SuSE\s+Linux\s+6\.4\s/i
+SuSE Linux			7.0	suse-linux	7.0	`cat /etc/SuSE-release 2>/dev/null` =~ /7\.0/ || $etc_issue =~ /SuSE\s+Linux\s+7\.0\s/i || $etc_issue =~ /SuSE\s+eMail\s+Server/i || $etc_issue =~ /SuSE\s+SLES-7/i
+SuSE Linux			7.1	suse-linux	7.1	`cat /etc/SuSE-release 2>/dev/null` =~ /7\.1/ || $etc_issue =~ /SuSE\s+Linux\s+7\.1\s/i
+SuSE Linux			7.2	suse-linux	7.2	`cat /etc/SuSE-release 2>/dev/null` =~ /7\.2/ || $etc_issue =~ /SuSE\s+Linux\s+7\.2\s/i
+SuSE Linux			7.3	suse-linux	7.3	`cat /etc/SuSE-release 2>/dev/null` =~ /7\.3/ || $etc_issue =~ /SuSE\s+Linux\s+7\.3\s/i
+SuSE Linux			8.0	suse-linux	8.0	`cat /etc/SuSE-release 2>/dev/null` =~ /8\.0/ || $etc_issue =~ /SuSE\s+Linux\s+8\.0\s/i
+SuSE Linux			8.1	united-linux	1.0	`cat /etc/SuSE-release 2>/dev/null` =~ /8\.1/ || $etc_issue =~ /SuSE\s+Linux\s+8\.1\s/i
+SuSE Linux			8.2	suse-linux	8.2	`cat /etc/SuSE-release 2>/dev/null` =~ /8\.2/ || $etc_issue =~ /SuSE\s+Linux\s+8\.2\s/i
+SuSE Linux			9.0	suse-linux	9.0	`cat /etc/SuSE-release 2>/dev/null` =~ /(9\.0|\s9\s)/ || $etc_issue =~ /SuSE\s+Linux((\s9\.0\s)|(\s9\s))/i
+SuSE Linux			9.1	suse-linux	9.1	`cat /etc/SuSE-release 2>/dev/null` =~ /9\.1/ || $etc_issue =~ /SuSE\s+Linux\s+9\.1\s/i
+SuSE Linux			9.2	suse-linux	9.2	`cat /etc/SuSE-release 2>/dev/null` =~ /9\.2/ || $etc_issue =~ /SuSE\s+Linux\s+9\.2\s/i
+SuSE Linux			OpenExchange 4.0	suse-linux	8.2 `cat /etc/SLOX-release 2>/dev/null` =~ /VERSION\s+=\s+4\.0/i
+United Linux			1.0	united-linux	1.0	`cat /etc/UnitedLinux-release 2>/dev/null` =~ /1\.0/
+Corel Linux			1.0	corel-linux	1.0	$etc_issue =~ /Corel\s+LINUX\s+1\.0/i
+Corel Linux			1.1	corel-linux	1.1	$etc_issue =~ /Corel\s+LINUX\s+1\.1/i
+Corel Linux			1.2	corel-linux	1.2	$etc_issue =~ /Corel\s+LINUX\s+1\.2/i
+TurboLinux			4.0	turbo-linux	4.0	`cat /etc/turbolinux-release 2>/dev/null` =~ /release\s+4\.0\s+/i
+TurboLinux			6.0	turbo-linux	6.0	`cat /etc/turbolinux-release 2>/dev/null` =~ /release\s+6\.0\s+/i || `cat /etc/turbolinux-release 2>/dev/null` =~ /release\s+6\s+advanced/i
+TurboLinux			6.1	turbo-linux	6.1	`cat /etc/turbolinux-release 2>/dev/null` =~ /release\s+6\.1\s+/i
+TurboLinux			6.5	turbo-linux	6.5	`cat /etc/turbolinux-release 2>/dev/null` =~ /release\s+6\.5\s+/i
+TurboLinux			7.0	turbo-linux	7.0	`cat /etc/turbolinux-release 2>/dev/null` =~ /7\.0/i
+Cobalt Linux			2.2	cobalt-linux	2.2	$etc_issue =~ /Cobalt\s+Linux\s+release\s+2.2/i || `cat /etc/cobalt-release 2>/dev/null` =~ /2\.2/
+Cobalt Linux			4.0	cobalt-linux	4.0	$etc_issue =~ /Cobalt\s+Linux\s+release\s+4.0/i || `cat /etc/cobalt-release 2>/dev/null` =~ /4\.0/
+Cobalt Linux			5.0	cobalt-linux	5.0	$etc_issue =~ /Cobalt\s+Linux\s+release\s+5.0/i || `cat /etc/cobalt-release 2>/dev/null` =~ /5\.0/
+Cobalt Linux			6.0	cobalt-linux	6.0	$etc_issue =~ /Cobalt\s+Linux\s+release\s+6.0/i || `cat /etc/cobalt-release 2>/dev/null` =~ /6\.0/
+Cobalt Linux			6.4	cobalt-linux	6.4	`uname -r` =~ /2.2.16/ && -r "/etc/cobalt-release"
+Cobalt Linux			7.0	cobalt-linux	7.0	`cat /etc/cobalt-release 2>/dev/null` =~ /7\.0/
+Mandrake Linux			5.3	redhat-linux	5.0	$etc_issue =~ /Mandrake\s+release\s+5\.3/i
+Mandrake Linux			6.0	redhat-linux	6.0	$etc_issue =~ /Mandrake\s+release\s+6\.0/i
+Mandrake Linux			6.1	redhat-linux	6.0	$etc_issue =~ /Mandrake\s+release\s+6\.1/i
+Mandrake Linux			7.0	redhat-linux	6.1	$etc_issue =~ /Mandrake\s+release\s+7\.0/i
+Mandrake Linux			7.1	redhat-linux	6.2	$etc_issue =~ /Mandrake\s+release\s+7\.1/i
+Mandrake Linux			7.2	mandrake-linux	7.2	$etc_issue =~ /Mandrake\s+release\s+7\.2/i
+Mandrake Linux			8.0	mandrake-linux	8.0	`cat /etc/mandrake-release 2>/dev/null` =~ /8\.0/ || $etc_issue =~ /Mandrake\s+release\s+8\.0/i
+Mandrake Linux			8.1	mandrake-linux	8.1	`cat /etc/mandrake-release 2>/dev/null` =~ /8\.1/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+8\.1/i
+Mandrake Linux			8.2	mandrake-linux	8.2	`cat /etc/mandrake-release 2>/dev/null` =~ /8\.2/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+8\.2/i
+Mandrake Linux			9.0	mandrake-linux	9.0	`cat /etc/mandrake-release 2>/dev/null` =~ /9\.0/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+9\.0/i
+Mandrake Linux			9.1	mandrake-linux	9.1	`cat /etc/mandrake-release 2>/dev/null` =~ /9\.1/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+9\.1/i
+Mandrake Linux			9.2	mandrake-linux	9.2	`cat /etc/mandrake-release 2>/dev/null` =~ /9\.2/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+9\.2/i
+Mandrake Linux			10.0	mandrake-linux	10.0	`cat /etc/mandrake-release 2>/dev/null` =~ /10\.0/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+10\.0/i
+Mandrake Linux			10.1	mandrake-linux	10.0	`cat /etc/mandrake-release 2>/dev/null` =~ /10\.1/ || $etc_issue =~ /Mandrake\s+Linux\s+release\s+10\.1/i
+Mandrake Linux Corporate Server	1.0	redhat-linux	6.2	$etc_issue =~ /Mandrake\s+Corporate\s+Server\s+release\s+1\.0/i
+Delix DLD Linux			5.2	redhat-linux	4.0
+Delix DLD Linux			5.3	redhat-linux	5.0
+Delix DLD Linux			6.0	redhat-linux	6.0
+Conectiva Linux			3.0	redhat-linux	5.2	$etc_issue =~ /Conectiva.*Linux.*3\.0/i
+Conectiva Linux			4.0	redhat-linux	6.0	$etc_issue =~ /Conectiva.*Linux.*4\.0/i
+Conectiva Linux			4.1	redhat-linux	6.1	$etc_issue =~ /Conectiva.*Linux.*4\.1/i
+Conectiva Linux			4.2	redhat-linux	6.1	$etc_issue =~ /Conectiva.*Linux.*4\.2/i
+Conectiva Linux			5.0	redhat-linux	6.2	$etc_issue =~ /Conectiva.*Linux.*5\.0/i
+Conectiva Linux			5.1	redhat-linux	6.2	$etc_issue =~ /Conectiva.*Linux.*5\.1/i
+Conectiva Linux			6.0	redhat-linux	7.0	$etc_issue =~ /Conectiva.*Linux.*6\.0/i
+Conectiva Linux			7.0	redhat-linux	7.1	$etc_issue =~ /Conectiva.*Linux.*7\.0/i
+Conectiva Linux			8	redhat-linux	7.3	$etc_issue =~ /Conectiva.*Linux.*\s8/i
+Conectiva Linux			9	redhat-linux	8.0	$etc_issue =~ /Conectiva.*Linux.*\s9/i
+ThizLinux Desktop		5.0	redhat-linux	7.2	$etc_issue =~ /Thiz.*Linux.*\s5\.0/i
+ThizLinux Desktop		6.0	redhat-linux	7.3	$etc_issue =~ /Thiz.*Linux.*\s6\.0/i
+ThizLinux Desktop		6.2	redhat-linux	7.3	$etc_issue =~ /Thiz.*Linux.*\s6\.2/i
+ThizLinux Desktop		7.0	redhat-linux	8.0	$etc_issue =~ /Thiz.*Linux.*\s7\.0/i
+ThizServer			4.3	redhat-linux	7.1	$etc_issue =~ /Thiz.*\s?Server.*\s4\.3/i
+ThizServer			6.0	redhat-linux	7.3	$etc_issue =~ /Thiz.*\s?Server.*\s6\.0/i
+ThizServer			7.0	redhat-linux	8.0	$etc_issue =~ /Thiz.*\s?Server.*\s7\.0/i
+MSC Linux			January 2001	msc-linux	2001.2	`cat /etc/msclinux-release 2>/dev/null` =~ /2001.*January/i || $etc_issue =~ /2001.*January/i
+MSC Linux			February 2001	msc-linux	2001.2	`cat /etc/msclinux-release 2>/dev/null` =~ /2001.*February/i || $etc_issue =~ /2001.*February/i
+MSC Linux			May 2001	msc-linux	2001.5	`cat /etc/msclinux-release 2>/dev/null` =~ /2001.*May/i || $etc_issue =~ /2001.*May/i
+MSC Linux			June 2001	msc-linux	2001.6	`cat /etc/msclinux-release 2>/dev/null` =~ /2001.*June/i || $etc_issue =~ /2001.*June/i
+MSC Linux			August 2001	msc-linux	2001.8	`cat /etc/msclinux-release 2>/dev/null` =~ /2001.*August/i || $etc_issue =~ /2001.*August/i
+MSC Linux			February 2002	msc-linux	2002.2	`cat /etc/msclinux-release 2>/dev/null` =~ /2002.*February/i || $etc_issue =~ /2002.*February/i
+MSC Linux			March 2002	msc-linux	2002.3	`cat /etc/msclinux-release 2>/dev/null` =~ /2002.*March/i || $etc_issue =~ /2002.*March/i
+MSC Linux			May 2002	msc-linux	2002.5	`cat /etc/msclinux-release 2>/dev/null` =~ /2002.*May/i || $etc_issue =~ /2002.*May/i
+MSC Linux			July 2002	msc-linux	2002.7	`cat /etc/msclinux-release 2>/dev/null` =~ /2002.*July/i || $etc_issue =~ /2002.*July/i
+MSC Linux			Nov 2002	msc-linux	2002.11	`cat /etc/msclinux-release 2>/dev/null` =~ /2002.*Nov/i || $etc_issue =~ /2002.*Nov/i
+MkLinux				DR2.1	redhat-linux	4.0
+MkLinux				DR3	redhat-linux	5.0
+LinuxPPC			2000	redhat-linux	6.1	$etc_issue =~ /LinuxPPC\s+2000/i
+XLinux				1.0	redhat-linux	6.1
+LinuxPL				1.0	redhat-linux	6.1
+Trustix				1.1	redhat-linux	6.2	$etc_issue =~ /Trustix.*1\.1/i
+Trustix				1.2	redhat-linux	7.0	$etc_issue =~ /Trustix.*1\.2/i
+Trustix				1.5	redhat-linux	7.1	$etc_issue =~ /Trustix.*1\.5/i
+Trustix				2.0	trustix-linux	2.0	$etc_issue =~ /Trustix.*2\.0/i || $etc_issue =~ /Tawie\s+Server\s+Linux.*2\.0/i || $etc_issue =~ /tinysofa.*release\s+1\.0/i
+Trustix				2.1	trustix-linux	2.1	$etc_issue =~ /Trustix.*2\.1/i || $etc_issue =~ /Tawie\s+Server\s+Linux.*2\.1/i
+Trustix SE			2	trustix-linux	2	$etc_issue =~ /Trustix.*Enterprise.*2\)/i
+Cendio LBS Linux		3.1	redhat-linux	6.1	$etc_issue =~ /Cendio\s*LBS.*\s3\.1/i || `cat /etc/lbs-release 2>/dev/null` =~ /3\.1/
+Cendio LBS Linux		3.2	redhat-linux	6.2	$etc_issue =~ /Cendio\s*LBS.*\s3\.2/i || `cat /etc/lbs-release 2>/dev/null` =~ /3\.2/
+Cendio LBS Linux		3.3	redhat-linux	6.2	$etc_issue =~ /Cendio\s*LBS.*\s3\.3/i || `cat /etc/lbs-release 2>/dev/null` =~ /3\.3/
+Cendio LBS Linux		4.0	redhat-linux	7.1	$etc_issue =~ /Cendio\s*LBS.*\s4\.0/i || `cat /etc/lbs-release 2>/dev/null` =~ /4\.0/
+Cendio LBS Linux		4.1	redhat-linux	7.1	$etc_issue =~ /Cendio\s*LBS.*\s4\.1/i || `cat /etc/lbs-release 2>/dev/null` =~ /4\.1/
+Ute Linux			1.0	redhat-linux	6.2	`cat /etc/ute-release 2>/dev/null` =~ /Ute\s+Linux\s+release\s+1\.0/i
+Lanthan Linux			1.0	redhat-linux	6.2	$etc_issue =~ /Lanthan\s+Linux\s+release\s+1\.0/i || `cat /etc/lanthan-release 2>/dev/null` =~ /1\.0/
+Lanthan Linux			2.0	redhat-linux	7.0	$etc_issue =~ /Lanthan\s+Linux\s+release\s+2\.0/i || `cat /etc/lanthan-release 2>/dev/null` =~ /2\.0/
+Lanthan Linux			3.0	redhat-linux	7.1	$etc_issue =~ /Lanthan\s+Linux\s+release\s+3\.0/i || `cat /etc/lanthan-release 2>/dev/null` =~ /3\.0/
+Yellow Dog Linux		2.0	redhat-linux	7.0	$etc_issue =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.0\s+/i || `cat /etc/yellowdog-release 2>/dev/null` =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.0\s+/i
+Yellow Dog Linux		2.1	redhat-linux	7.1	$etc_issue =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.1\s+/i || `cat /etc/yellowdog-release 2>/dev/null` =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.1\s+/i
+Yellow Dog Linux		2.2	redhat-linux	7.2	$etc_issue =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.2\s+/i || `cat /etc/yellowdog-release 2>/dev/null` =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.2\s+/i
+Yellow Dog Linux		2.3	redhat-linux	8.0	$etc_issue =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.3\s+/i || `cat /etc/yellowdog-release 2>/dev/null` =~ /Yellow\s+Dog\s+Linux\s+release\s+2\.3\s+/i
+Yellow Dog Linux		3.0	redhat-linux	9.0	$etc_issue =~ /Yellow\s+Dog\s+Linux\s+release\s+3\.0\s+/i || `cat /etc/yellowdog-release 2>/dev/null` =~ /Yellow\s+Dog\s+Linux\s+release\s+3\.0\s+/i
+Yellow Dog Linux		4.0	redhat-linux	11.0	$etc_issue =~ /Yellow\s+Dog\s+Linux\s+release\s+4\.0\s+/i || `cat /etc/yellowdog-release 2>/dev/null` =~ /\s4\.0\s/i
+Corvus Latinux			8.0	redhat-linux	7.1	`cat /etc/latinux-release 2>/dev/null` =~ /Latinux\s+8\s/i
+Immunix Linux			6.2	redhat-linux	6.2	$etc_issue =~ /Immunix.*\s6\.2/i || `cat /etc/immunix-release 2>/dev/null` =~ /6\.2/
+Immunix Linux			7.0	redhat-linux	7.0	$etc_issue =~ /Immunix.*\s7\.0/i || `cat /etc/immunix-release 2>/dev/null` =~ /7\.0/
+Gentoo Linux			Any version	gentoo-linux	*	-d "/usr/portage"
+Lycoris Desktop/LX		1.0	open-linux	3.1e	$etc_issue =~ /Lycoris Desktop/i
+Secure Linux			1.0	redhat-linux	7.2	`cat /etc/securelinux-release 2>/dev/null` =~ /SecureLinux.*1\.0/i
+OpenNA Linux			1.0	redhat-linux	9.0	`cat /etc/openna-release 2>/dev/null` =~ /release\s+1\.0\s/i
+White Dwarf Linux		2.1.0	slackware-linux	8.1	`cat /tmp/wd/version 2>/dev/null` =~ /2\.1\.0/
+SoL Linux			17.00	sol-linux	17.00	-r "/etc/antitachyon-distribution"
+Coherent Technology Linux	1.1	coherent-linux	1.1	$etc_issue =~ /coherent\s*technology.*\s1\.1/i || `cat /etc/coherent-release 2>&1` =~ /1\.1/
+Coherent Technology Linux	1.2	coherent-linux	1.2	$etc_issue =~ /coherent\s*technology.*\s1\.2/i || `cat /etc/coherent-release 2>&1` =~ /1\.2/
+Coherent Technology Linux	1.3	coherent-linux	1.3	$etc_issue =~ /coherent\s*technology.*\s1\.3/i || `cat /etc/coherent-release 2>&1` =~ /1\.3/
+Coherent Technology Linux	2.0	coherent-linux	2.0	$etc_issue =~ /coherent\s*technology.*\s2\.0/i || `cat /etc/coherent-release 2>&1` =~ /2\.0/
+Coherent Technology Linux	3.0	coherent-linux	3.0	$etc_issue =~ /coherent\s*technology.*\s3\.0/i || `cat /etc/coherent-release 2>&1` =~ /3\.0/
+Coherent Technology Linux	3.1	coherent-linux	3.1	$etc_issue =~ /coherent\s*technology.*\s3\.1/i || `cat /etc/coherent-release 2>&1` =~ /3\.1/
+Coherent Technology Linux	3.2	coherent-linux	3.2	$etc_issue =~ /coherent\s*technology.*\s3\.2/i || `cat /etc/coherent-release 2>&1` =~ /3\.2/
+Coherent Technology Linux	3.3	coherent-linux	3.3	$etc_issue =~ /coherent\s*technology.*\s3\.3/i || `cat /etc/coherent-release 2>&1` =~ /3\.3/
+Coherent Technology Linux	3.4	coherent-linux	3.4	$etc_issue =~ /coherent\s*technology.*\s3\.4/i || `cat /etc/coherent-release 2>&1` =~ /3\.4/
+Coherent Technology Linux	3.5	coherent-linux	3.5	$etc_issue =~ /coherent\s*technology.*\s3\.5/i || `cat /etc/coherent-release 2>&1` =~ /3\.5/
+Coherent Technology Linux	3.6	coherent-linux	3.6	$etc_issue =~ /coherent\s*technology.*\s3\.6/i || `cat /etc/coherent-release 2>&1` =~ /3\.6/
+Coherent Technology Linux	3.7	coherent-linux	3.7	$etc_issue =~ /coherent\s*technology.*\s3\.7/i || `cat /etc/coherent-release 2>&1` =~ /3\.7/
+Coherent Technology Linux	3.8	coherent-linux	3.8	$etc_issue =~ /coherent\s*technology.*\s3\.8/i || `cat /etc/coherent-release 2>&1` =~ /3\.8/
+Coherent Technology Linux	3.9	coherent-linux	3.9	$etc_issue =~ /coherent\s*technology.*\s3\.9/i || `cat /etc/coherent-release 2>&1` =~ /3\.9/
+Coherent Technology Linux	4.0	coherent-linux	4.0	$etc_issue =~ /coherent\s*technology.*\s4\.0/i || `cat /etc/coherent-release 2>&1` =~ /4\.0/
+Coherent Technology Linux	4.1	coherent-linux	4.1	$etc_issue =~ /coherent\s*technology.*\s4\.1/i || `cat /etc/coherent-release 2>&1` =~ /4\.1/
+Coherent Technology Linux	4.2	coherent-linux	4.2	$etc_issue =~ /coherent\s*technology.*\s4\.2/i || `cat /etc/coherent-release 2>&1` =~ /4\.2/
+Coherent Technology Linux	4.3	coherent-linux	4.3	$etc_issue =~ /coherent\s*technology.*\s4\.3/i || `cat /etc/coherent-release 2>&1` =~ /4\.3/
+Coherent Technology Linux	4.4	coherent-linux	4.4	$etc_issue =~ /coherent\s*technology.*\s4\.4/i || `cat /etc/coherent-release 2>&1` =~ /4\.4/
+Coherent Technology Linux	4.5	coherent-linux	4.5	$etc_issue =~ /coherent\s*technology.*\s4\.5/i || `cat /etc/coherent-release 2>&1` =~ /4\.5/
+Coherent Technology Linux	4.6	coherent-linux	4.6	$etc_issue =~ /coherent\s*technology.*\s4\.6/i || `cat /etc/coherent-release 2>&1` =~ /4\.6/
+Coherent Technology Linux	4.7	coherent-linux	4.7	$etc_issue =~ /coherent\s*technology.*\s4\.7/i || `cat /etc/coherent-release 2>&1` =~ /4\.7/
+Coherent Technology Linux	4.8	coherent-linux	4.8	$etc_issue =~ /coherent\s*technology.*\s4\.8/i || `cat /etc/coherent-release 2>&1` =~ /4\.8/
+Coherent Technology Linux	4.9	coherent-linux	4.9	$etc_issue =~ /coherent\s*technology.*\s4\.9/i || `cat /etc/coherent-release 2>&1` =~ /4\.9/
+Playstation Linux		1.0	redhat-linux	6.2	$etc_issue =~ /PS2\s+Linux\s+release\s+1.0/i
+TinySofa Linux			2.0	redhat-linux	11.0	`cat /etc/tinysofa-release 2>/dev/null` =~ /release\s+2\.0/i
+StartCom Linux			3.0	redhat-linux	10.0	`cat /etc/startcom-release 2>/dev/null` =~ /3\.0/
+Generic Linux			2.0	generic-linux	2.0
+Generic Linux			2.2	generic-linux	2.2
+Generic Linux			2.4	generic-linux	2.4
+Generic Linux			2.6	generic-linux	2.6
+FreeBSD				2.1	freebsd		2.1	$uname =~ /FreeBSD.*\s2\.1/i
+FreeBSD				2.2	freebsd		2.2	$uname =~ /FreeBSD.*\s2\.2/i
+FreeBSD				3.0	freebsd		3.0	$uname =~ /FreeBSD.*\s3\.0/i
+FreeBSD				3.1	freebsd		3.1	$uname =~ /FreeBSD.*\s3\.1/i
+FreeBSD				3.2	freebsd		3.2	$uname =~ /FreeBSD.*\s3\.2/i
+FreeBSD				3.3	freebsd		3.3	$uname =~ /FreeBSD.*\s3\.3/i
+FreeBSD				3.4	freebsd		3.4	$uname =~ /FreeBSD.*\s3\.4/i
+FreeBSD				3.5	freebsd		3.5	$uname =~ /FreeBSD.*\s3\.5/i
+FreeBSD				4.0	freebsd		4.0	$uname =~ /FreeBSD.*\s4\.0/i
+FreeBSD				4.1	freebsd		4.1	$uname =~ /FreeBSD.*\s4\.1(\s|\-)/i
+FreeBSD				4.2	freebsd		4.2	$uname =~ /FreeBSD.*\s4\.2/i
+FreeBSD				4.3	freebsd		4.3	$uname =~ /FreeBSD.*\s4\.3/i
+FreeBSD				4.4	freebsd		4.4	$uname =~ /FreeBSD.*\s4\.4/i
+FreeBSD				4.5	freebsd		4.5	$uname =~ /FreeBSD.*\s4\.5/i
+FreeBSD				4.6	freebsd		4.6	$uname =~ /FreeBSD.*\s4\.6/i
+FreeBSD				4.7	freebsd		4.7	$uname =~ /FreeBSD.*\s4\.7/i
+FreeBSD				4.8	freebsd		4.8	$uname =~ /FreeBSD.*\s4\.8/i
+FreeBSD				4.9	freebsd		4.9	$uname =~ /FreeBSD.*\s4\.9/i
+FreeBSD				4.10	freebsd		4.10	$uname =~ /FreeBSD.*\s4\.10(\s|\-)/i
+FreeBSD				5.0	freebsd		5.0	$uname =~ /FreeBSD.*\s5\.0/i
+FreeBSD				5.1	freebsd		5.1	$uname =~ /FreeBSD.*\s5\.1/i
+FreeBSD				5.2	freebsd		5.2	$uname =~ /FreeBSD.*\s5\.2/i
+FreeBSD				5.3	freebsd		5.3	$uname =~ /FreeBSD.*\s5\.2/i
+OpenBSD				2.5	openbsd		2.5	$uname =~ /OpenBSD.*\s2\.5/i
+OpenBSD				2.6	openbsd		2.6	$uname =~ /OpenBSD.*\s2\.6/i
+OpenBSD				2.7	openbsd		2.7	$uname =~ /OpenBSD.*\s2\.7/i
+OpenBSD				2.8	openbsd		2.8	$uname =~ /OpenBSD.*\s2\.8/i
+OpenBSD				2.9	openbsd		2.9	$uname =~ /OpenBSD.*\s2\.9/i
+OpenBSD				3.0	openbsd		3.0	$uname =~ /OpenBSD.*\s3\.0/i
+OpenBSD				3.1	openbsd		3.1	$uname =~ /OpenBSD.*\s3\.1/i
+OpenBSD				3.2	openbsd		3.2	$uname =~ /OpenBSD.*\s3\.2/i
+OpenBSD				3.3	openbsd		3.3	$uname =~ /OpenBSD.*\s3\.3/i
+OpenBSD				3.4	openbsd		3.4	$uname =~ /OpenBSD.*\s3\.4/i
+OpenBSD				3.5	openbsd		3.5	$uname =~ /OpenBSD.*\s3\.5/i
+OpenBSD				3.6	openbsd		3.6	$uname =~ /OpenBSD.*\s3\.6/i
+NetBSD				1.5	netbsd		1.5	$uname =~ /NetBSD.*1\.5/i
+NetBSD				1.6	netbsd		1.6	$uname =~ /NetBSD.*1\.6/i
+NetBSD				2.0	netbsd		2.0	$uname =~ /NetBSD.*2\.0/i
+BSDI				3.0	freebsd		2.2
+BSDI				3.1	freebsd		2.2
+BSDI				4.0	freebsd		3.0
+DragonFly BSD			1.0	freebsd		4.8	$uname =~ /DragonFly.*\s1\.0A/i
+HP/UX				10.01	hpux		10.01	$uname =~ /HP-UX.*10\.01/
+HP/UX				10.10	hpux		10.10	$uname =~ /HP-UX.*10\.10/
+HP/UX				10.20	hpux		10.20	$uname =~ /HP-UX.*10\.20/
+HP/UX				10.30	hpux		10.30	$uname =~ /HP-UX.*10\.30/
+HP/UX				11	hpux		11	$uname =~ /HP-UX.*11\./
+SGI Irix			6.0	irix		6.0	$uname =~ /IRIX.*6\.0/i
+SGI Irix			6.1	irix		6.1	$uname =~ /IRIX.*6\.1/i
+SGI Irix			6.2	irix		6.2	$uname =~ /IRIX.*6\.2/i
+SGI Irix			6.3	irix		6.3	$uname =~ /IRIX.*6\.3/i
+SGI Irix			6.4	irix		6.4	$uname =~ /IRIX.*6\.4/i
+SGI Irix			6.5	irix		6.5	$uname =~ /IRIX.*6\.5/i
+DEC/Compaq OSF/1		4.0	osf1		4.0	$uname =~ /OSF1.*4\.0/
+DEC/Compaq OSF/1		5.1	osf1		5.1	$uname =~ /OSF1.*V5.1/
+IBM AIX				4.2	aix		4.2	$uname =~ /\sAIX\s+2\s+4\s+/i
+IBM AIX				4.3	aix		4.3	$uname =~ /\sAIX\s+3\s+4\s+/i
+IBM AIX				5.0	aix		5.0	$uname =~ /\sAIX\s+0\s+5\s+/i
+IBM AIX				5.1	aix		5.1	$uname =~ /\sAIX\s+1\s+5\s+/i
+IBM AIX				5.2	aix		5.2	$uname =~ /\sAIX\s+2\s+5\s+/i
+SCO UnixWare			2	unixware	2
+SCO UnixWare			7	unixware	7
+SCO UnixWare			8	unixware	8
+SCO OpenServer			5	openserver	5	$uname =~ /SCO_SV.*\s5\./i
+Mac OS X / OS X Server		10.0	macos		1.3	`sw_vers 2>/dev/null` =~ /ProductVersion:\s+10\.0/i
+Mac OS X / OS X Server		10.1	macos		1.4	`sw_vers 2>/dev/null` =~ /ProductVersion:\s+10\.1/i
+Mac OS X / OS X Server		10.2	macos		6.0	`sw_vers 2>/dev/null` =~ /ProductVersion:\s+10\.2/i
+Mac OS X / OS X Server		10.3	macos		7.0	`sw_vers 2>/dev/null` =~ /ProductVersion:\s+10\.3/i
+Darwin				1.0	macos		1.0	$uname =~ /Darwin.*\s1\.0/
+Darwin				1.2	macos		1.2	$uname =~ /Darwin.*\s1\.2/
+Darwin				1.3	macos		1.3	$uname =~ /Darwin.*\s1\.3/
+Darwin				1.4	macos		1.4	$uname =~ /Darwin.*\s1\.4/
+Darwin				5.1	macos		5.1	$uname =~ /Darwin.*\s5\.1/
+Darwin				5.2	macos		5.2	$uname =~ /Darwin.*\s5\.2/
+Darwin				5.3	macos		5.3	$uname =~ /Darwin.*\s5\.3/
+Darwin				5.4	macos		5.4	$uname =~ /Darwin.*\s5\.4/
+Darwin				5.5	macos		5.5	$uname =~ /Darwin.*\s5\.5/
+Darwin				6.0	macos		6.0	$uname =~ /Darwin.*\s6\.0/
+Darwin				6.1	macos		6.1	$uname =~ /Darwin.*\s6\.1/
+Darwin				6.2	macos		6.2	$uname =~ /Darwin.*\s6\.2/
+Darwin				6.3	macos		6.3	$uname =~ /Darwin.*\s6\.3/
+Darwin				6.4	macos		6.4	$uname =~ /Darwin.*\s6\.4/
+Darwin				6.5	macos		6.5	$uname =~ /Darwin.*\s6\.5/
+Darwin				6.6	macos		6.6	$uname =~ /Darwin.*\s6\.6/
+Darwin				6.7	macos		6.7	$uname =~ /Darwin.*\s6\.7/
+Darwin				6.8	macos		6.8	$uname =~ /Darwin.*\s6\.8/
+Darwin				7.0	macos		7.0	$uname =~ /Darwin.*\s7\.0/
+Darwin				7.1	macos		7.1	$uname =~ /Darwin.*\s7\.1/
+Darwin				7.2	macos		7.3	$uname =~ /Darwin.*\s7\.2/
+Darwin				7.3	macos		7.3	$uname =~ /Darwin.*\s7\.3/
+Darwin				7.4	macos		7.4	$uname =~ /Darwin.*\s7\.4/
+Darwin				7.5	macos		7.5	$uname =~ /Darwin.*\s7\.5/
+OpenDarwin			6.6.1	macos		6.0
+OpenDarwin			6.6.2	macos		6.0
+OpenDarwin			7.7.1	macos		7.0
+Cygwin				1.1	cygwin		1.1
+Cygwin				1.3	cygwin		1.3
+Sun Java Desktop System		1.0 (Linux)	suse-linux	9.1	`cat /etc/SuSE-release 2>/dev/null` =~ /Java Desktop System.*\nVERSION = 1\.0/i
+Sun Java Desktop System		2.0 (Linux)	suse-linux	9.2	`cat /etc/SuSE-release 2>/dev/null` =~ /Java Desktop System.*\nVERSION = 2\.0/i
+Sun Java Desktop System		3.0 (Linux)	suse-linux	9.2	`cat /etc/SuSE-release 2>/dev/null` =~ /Java Desktop System.*\nVERSION = 3\.0/i
+Sun Java Desktop System		2.0 (Solaris)	solaris		9	$uname =~ /SunOS.*\s5\.9\s/i && `cat /etc/sun-release 2>/dev/null` =~ /Sun\s+Java\s+Desktop/

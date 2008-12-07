@@ -1,0 +1,8 @@
+---- Changes since 1.140 ----
+Module update emails are now sent using the Read User Mail module.
+Added a new option to the Webmin Modules page for installing a third-party module from thirdpartymodules.webmin.com.
+Added a field to the Index Page Options page for specifying a module to redirect users to immediately after logging in.
+---- Changes since 1.150 ----
+Added an option to the Authentication page for enabling the use of MD5 encrypted passwords for Webmin users. These are more secure, and allow longer usable passwords.
+Added an option to the Proxy Servers page for specifying a source IP address for all network connections.
+

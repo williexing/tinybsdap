@@ -1,0 +1,61 @@
+index_title=802.11 WLAN
+
+index_ecommand=The command $1 was not found on your system. Webmin needs this command to configure IPtables.
+index_ekernel=An error occured when checking your current IPtables configuration : $1 This may indicate that your kernel does not support IPtables.
+index_header=Firewall configuration from $1
+index_change=Showing IPtable:
+index_chain_input=Incoming packets (INPUT)
+index_chain_output=Outgoing packets (OUTPUT)
+index_chain_forward=Forwarded packets (FORWARD)
+index_chain_prerouting=Packets before routing (PREROUTING)
+index_chain_postrouting=Packets after routing (POSTROUTING)
+index_chain=Chain $1
+index_action=Action
+index_desc=Condition
+index_comm=Comment
+index_no_comment=
+index_move=Move
+index_none=There are no rules defined for this chain.
+index_policy=Set default action to:
+index_policy_accept=Accept
+index_policy_drop=Drop
+index_policy_queue=Userspace
+index_policy_return=Exit chain
+index_jump_accept=<font color=#00aa00>Accept</font>
+index_jump_drop=<font color=#ff0000>Drop</font>
+index_jump_reject=<font color=#ff4400>Reject</font>
+index_jump_queue=<font color=#0000ff>Userspace</font>
+index_jump_return=Exit chain
+index_jump_masquerade=Masquerade
+index_jump_redirect=Redirect
+index_jump_dnat=Destination NAT
+index_jump_snat=Source NAT
+index_jump_=Do nothing
+index_jump=Run chain $1
+index_radd=Add rule
+index_cdelete=Delete chain
+index_cclear=Clear all rules
+index_cadd=Add a new chain named:
+index_apply=Apply Configuration
+index_applydesc=Click this button to make the firewall configuration listed above active. Any firewall rules currently in effect will be flushed and replaced 
+index_unapply=Revert Configuration
+index_unapplydesc=Click this button to reset the configuration listed above to the one that is currently active.
+index_table_filter=Packet filtering (filter)
+index_table_nat=Network address translation (nat)
+index_table_mangle=Packet alteration (mangle)
+index_existing=Webmin has detected $1 IPtables firewall rules currently in use, which are not recorded in the save file $2. These rules were probably setup from a script, which this module does not know how to read and edit.<p>If you want to use this module to manage your IPtables firewall, click the button below to convert the existing rules to a save file, and then disable your existing firewall script.
+index_saveex=Save Firewall Rules
+index_atboot=Enable firewall at boot time?
+index_headerex=Existing firewall configuration
+index_bootup=Activate at boot
+index_bootupdesc=Change this option to control whether your firewall is activated at boot time or not.
+index_return=rules list
+index_setup=No IPtables firewall has been setup yet on your system. Webmin can set one up for you, to be stored in the save file $1, with the initial settings based your selection of firewall type below..
+index_auto0=Allow all traffic
+index_auto1=Do network address translation on external interface:
+index_auto2=Block all incoming connections on external interface:
+index_auto3=Block all except SSH and IDENT on external interface:
+index_auto4=Block all except SSH, IDENT, ping and high ports on interface:
+index_auto=Setup Firewall
+index_add=Add
+index_shorewall=Warning! It appears that Shorewall is being used to generate your system's firewall. Maybe you should use the <a href='$1'>Shorewall Firewall module</a> instead.

@@ -1,0 +1,316 @@
+index_title=Webmin Configuratie
+index_return=webmin configuratie
+
+access_title=IP Toegangs Controle
+access_desc=De Webmin server kan via deze functier worden geconfigureerd om alleen toegang te verlenen of te weigeren vanaf bepaalde IP adressen. Hostnamen (zoals foo.bar.com) en IP netwerken (zoals 10.254.3.0 of 10.254.1.0/255.255.255.128) kunnen ook ingevuld worden. U zou de toegang tot uw server moeten beperken tot vertrouwde adressen, zeker wanneer het systeem vanaf het Internet bereikbaar is. Anders heeft iedereen die uw wachtwoord raadt volledige toegang tot uw systeem.
+access_header=Toegangs Controle
+access_all=Toestaan vanaf alle adressen
+access_allow=Alleen toestaan vanaf adressen in de lijst
+access_deny=Weigeren vanaf adressen in de lijst
+access_err=Fout bij het opslaan van toegangslijst
+access_enone=Geen adress ingevoerd
+access_enet='$1' is geen geldig netwerkadres
+access_emask='$1' is geen geldig netmasker
+access_eip='$1' is geen compleet IP of netwerk adres
+access_ehost=Fout bij het vinden van het IP adres voor '$1'
+access_eself=Uw huidige IP adres ($1) zou worden geweigerd
+
+bind_title=Poort en Adres
+bind_desc=Al de host waarop Webmin draait meerdere IP adressen heeft, kan de server met dit formulier worden geconfigureerd om op slechts een adres te luisteren. De TCP poort waarop Webmin luisterd kan hier ook worden geconfigureerd. Opmerking - uw web browser kan u opnieuw om uw gebruikersnaam en wachtwoord vragen als u de poort of het verbindings adres weizigd.
+bind_header=IP Adres and Poort
+bind_ip=Luister op IP Adres
+bind_all=Alle
+bind_port=Luister op Poort
+bind_err=Fout bij het wijzigen van adres
+bind_eip=Fout bij het ophalen van het IP adres voor '$1'
+bind_eassign=Het adres '$1' is niet toegewezen aan dit systeem
+bind_eport=Poort $1 is al in gebruik
+
+log_title=Rapportage
+log_desc=Webmin kan worden geconfigureerd om een rapportage te schrijven van de web server verbindingen, in het standaard CLF log bestand formaat. Als de rapportage is ingeschakeld, kunt u ook kiezen of het IP adres of de hostnaam worden opgeslagen, en hoe vaak het rapportage bestand wordt leeg gemaakt. Wanneer ingeschakeld, wordt de rapportage weggeschreven in het bestand $1.
+log_desc2=Wanneer de rapportage is ingeschakeld, zal Webmin ook een meer gedetailleerde rapportage maken van gebruikersacties in bestand $1. Deze rapportage kan worden bekeken en worden geannaliseerd met de Webmin Actie Rapportage module om precies te kunnen zien wat iedere webmingebruiker heeft gedaan.
+log_header=Web Server Rapportage
+log_disable=Uitschakelen rapportage
+log_enable=Inschakelen rapportage
+log_resolv=Sla opgezochte hostnamen op
+log_clear=Leeg apportage bestanden iedere $1 uur
+log_uall=Rapporteer acties van alle gebruikers
+log_users=Rapporteer alleen de acties van ..
+log_mall=Rapporteer acties in alle modules
+log_modules=Rapporteer aleen acties in ..
+log_files=Rapporteer wijzigingen in bestanden gemaakt door alle acties
+log_err=Fout bij het opslaan van de Rapportage opties
+log_ehours='$1' is geen geldig aantal uren
+log_ediff=Uw systeem bevat niet het commando $1 wat nodig is voor het rapoorteren van weizigingen in bestanden
+
+proxy_title=Proxy Servers
+proxy_desc=Als de host waarop Webmin draait zich achter een of andere firewall bevind, zult u mogelijk de proxy server invullen die nodig is voor het maken van een verbinding met het web and FTP sites. Bepaalde modules, zoals <tt>Software Paketten</tt>, zullen dan deze proxies gebruiken voor het downloaden van bestanden of programma's.
+proxy_header=Proxy Servers
+proxy_http=HTTP proxy
+proxy_ftp=FTP proxy
+proxy_none=Geen
+proxy_nofor=Geen proxy voor
+proxy_err=Fout bij het opslaan van de proxies
+proxy_ehttp=De HTTP proxy server moet ingevoerd worden als een URL
+proxy_eftp=De FTP proxy server moet ingevoerd worden als een URL
+
+ui_title=Gebruikers Interface
+ui_desc=Met deze functie kunt u de gebruikersinterface opties voor alle modules te bewerken. Wanneer u kleuren definieerd, moeten deze worden opgegeven in het standaard RGB systeem, waar iedere waarde een hexadecimaal nummer is tussen 00 en FF.
+ui_header=Gebruikers Interface Opties
+ui_default=Standaard
+cs_page=Pagina achtergrond
+cs_text=Normale tekst
+cs_table=Tabel achtergrond
+cs_header=Tabel kop
+cs_link=Link tekst
+ui_texttitles=Toon titels als tekst?
+ui_sysinfo=Toon login en hostnaam
+ui_sysinfo0=Aan de onderzijde van de browser
+ui_sysinfo1=In de browser titel
+ui_sysinfo2=Boven de pagina kop
+ui_err=Fout bij het opslaan van de kleuren
+ui_ered=Ongeldige rood waarde voor '$1'
+ui_egreen=Ongeldige groen waarde voor '$1'
+ui_eblue=Ongeldige blauw waarde voor '$1'
+
+mods_title=Webmin Modules
+mods_desc1=Webmin modules kunnen na installatie via het formulier rechts worden toegevoegd. Modules worden standaard gedistribueerd als  <tt>.wbm</tt> bestanden, welke een of meerdere modules kunnen bevatten. Als een module is gelicenceerd om alleen op een bepaalde host te draaien, kunt u het mogelijk niet installeren.
+mods_install=Installeer Module
+mods_local=Vanuit een lokaal bestand
+mods_uploaded=Vanuit een geupload bestand
+mods_ftp=Vanaf een ftp of http URL
+mods_installok=Installeer Module uit een bestand
+mods_desc2=Wanneer u meer dan een kopie van dezelfde module met verschillende configuraties wilt gebruiken, dan kunt u me het formulier rechts iedere bestaande module klonen. De kloon zal een nieuwe naam hebben, een nieuwe configuratie, nieuwe toegang en kan toegankelijk gemaakt worden voor andere gebruikers.
+mods_clone=Kloon Module
+mods_cname=Module om te klonen
+mods_cnew=Gekloonde module naam
+mods_cloneok=Kloon Module
+mods_desc3=bestaan de modules en hun klonen kunnen met behulp van het onderstaande formulier worden verwijderd. Wanneer een module waarvan u klonen heeft gemaakt verwijderd, worden ook de klonen verwijderd. Wanneer een module is verwijderd moet het opnieuw worden geinstalleerd, voordat u het opnieuw kunt gebruiken. Een module kan niet worden verwijderd ale een anderemodule ervan afhankelijk is.
+mods_delete=Verwijder Modules
+mods_deleteok=Verwijden Geselecteerde Modules
+
+install_err1=Fout bij het installeren van module uit $1
+install_efile=Bestand bestaat niet
+install_err2=Fout bij het installeren van een geuploade module
+install_ebrowser=Uw brouwser ondersteund geen bestands uploads
+install_err3=Fout bij het installeren van module uit $1
+install_eurl=Ongeldige URL
+install_etar=Geen geldig module bestand : $1
+install_einfo=Module $1 mist een module.info bestand
+install_enone=Bestand lijkt geen modules te bevatten
+install_eos=Module $1 ondersteund dit besturingssysteem niet ($2 $3)
+install_ever=Module $1 afhankelijk van Webmin versie $2 of hoger
+install_edep=Module $1 afhankelijk van module $2
+install_eextract=Uitpakken mislukt : $1
+install_title=Installeer Module
+install_desc=De volgende modules zijn succesvol geinstalleerd en toegevoegd aan uw toegangscontrolelijst :
+install_line=$1 in $2 ($3 kB)
+install_ecomp=Bestand is gecomprimeerd, maar het $1 commando is niet gevonden op uw systeem
+install_ecomp2=Fout bij decomprimeren van bestand : $1
+install_egzip=Bestand is met gzip gecomprimeerd, maar het $1 commando is niet gevonden op uw systeem
+install_egzip2=Fout bij get gunzippen van bestand : $1
+install_erpm=Geen Webmin module RPM
+install_eirpm=RPM installatie mislukt : $1
+
+clone_err=Fout bij het klonen van module
+clone_elink=symlink mislukt : $1
+clone_ecopy=fout bij het kopieren van configuratie : $1
+clone_desc=Kloon van $1
+
+delete_err=Fout bij het verwijderen van modules
+delete_edep=Module $1 kan niet worden verwijderd, omdat de module $2 ervan afhankelijk is
+delete_desc1=$1 (Kloon van $2)
+delete_desc2=$1 in $2 ($3 kB)
+delete_title=Verwijder Modules
+delete_msg=De volgende modules zijn succesvol verwijderd uit uw Webmin installation :
+delete_sure=Weet u zeker dat u de geselecteerde modules wilt verwijderen? $1 kB aan bestanden val permanent worden verwijderd.
+
+os_title=Besturingssysteem
+os_desc=Met deze functie kunt u het besturingssysteem wijzigen volgens welke Webmin uw systeem beschouwt. Dit kan handig zijn als u uw systeem heeft opgewaardeerd naar een nieuwere versie. Merk op dat de configuratie van de modules niet zal worden veranderd, ook niet wanneer er verschillen zijn tussen het oude en het nieuwe systeem.
+os_desc2=U kunt ook het zoekpad wijzigen dat Webmin gebruikt bij het uitvoeren van programma's, en het gedeelde bibliotheken pad wat wordt doorgegeven aan programma's.
+os_header=Host Besturingssysteem
+os_curros=Huidig besturingssysteem
+os_currver=Huidige OS versie
+os_new=Nieuw besturingssysteem
+os_path=Programma zoekpad
+os_ld_path=Gedeelde bibliotheken zoekpad
+
+lang_title=Taal
+lang_title2=Webmin Taal
+lang_lang=Geef weer in de taal
+lang_intro=Met deze functie kunt u de taal te wijzigen die Webmin zal gebruiken voor het weergeven van titels, vragen en berichten.
+lang_ok=Wijzig de Taal
+
+ssl_title=SSL Encryptie
+ssl_desc1=De host waarop Webmin wordt uitgevoerd blijkt de SSLeay Perl module geinstalleerd te hebben. Hier gebruik van makend, ondersteunt Webmin SSL gecodeerde communicatie tussen uw browser en de server. Als u uw Webmin server via het Internet benaderd, dan zou u zeker het gebruik van SSL moeten overwegen om het bemachtigen van uw Webmin wachtwoord door een aanvaller te voorkomen.
+ssl_desc2=Waarschuwing - zet de SSL ondersteuning alleen aan als u een browser met SSL ondersteuning gebruikt (zoals Netscape of IE), en er zich geen firewall tussen uw browser en uw Webmin host bevind die <b>https</b> vezoeken blokkeerd
+ssl_header=SSL Ondersteuning
+ssl_enable=Schakel SSL ondersteuning in, wanneer beschikbaar
+ssl_disable=Schakel SSL ondersteuning uit, wanneer beschikbaar
+
+startpage_title=Index Pagina Opties
+startpage_intro=Met deze functie kunt u definieëren hoeveel iconen er zich per rij naast elkaar op uw scherm bevinden op de index pagina.
+startpage_tabs=Categoriseer modules?
+startpage_nocol=Aantal Kolommen
+startpage_alt=Gebruik alternatieve kop
+startpage_ecols='$1' is geen geldig aantal kolommen
+startpage_gotoone=Ga rechtstreeks naar de module<br> als de gebruiker slechts toegang heeft tot één module?
+startpage_deftab=Standaard categorie
+
+upgrade_title=Webmin opwaarderen
+upgrade_desc=Met deze functie kunt u uw gehele webmin installatie opwaarderen naar een nieuwere versie. U kun installeren vanuit een lokaal bestand, of vanaf de laatste versie op <a href=http://www.webmin.com/>www.webmin.com</a>. Evenals bij een handmatige upgrade, zullen alle configuratie instellingen en third-party modules worden behouden.
+upgrade_descrpm=Met deze functie kunt u uw gehele webmin installatie opwaarderen naar een nieuwere versie. U kun installeren vanuit een lokaal bestand, of vanaf de laatste versie op <a href=http://www.webmin.com/>www.webmin.com</a>. Evenals bij een handmatige upgrade, zullen alle configuratie instellingen en third-party modules worden behouden.
+upgrade_descsolaris-pkg=Met deze functie kunt u uw gehele webmin installatie opwaarderen naar een nieuwere versie. U kun installeren vanuit een lokaal bestand, of vanaf de laatste versie op <a href=http://www.webmin.com/>www.webmin.com</a>. Evenals bij een handmatige upgrade, zullen alle configuratie instellingen en third-party modules worden behouden.
+upgrade_local=Vanaf een lokaal bestand
+upgrade_uploaded=Vanaf een geupload bestand
+upgrade_ftp=Laatste versie op www.webmin.com
+upgrade_ok=Webmin opwaarderen
+upgrade_err1=Fout bij het opwaarderen vanaf $1
+upgrade_err2=Fout bij het opwaarderen vanaf geupload bestand
+upgrade_err3=Fout bij het opwaarderen vanaf www.webmin.com
+upgrade_efile=Bestand bestaat niet
+upgrade_ebrowser=Uw browser ondersteunt geen uploads van bestanden
+upgrade_eversion=U kun uw versie niet vervangen door een oudere $1
+upgrade_erpm=Geen geldig Webmin RPM bestand
+upgrade_egunzip=U systeem bevat niet het <tt>gunzip</tt> commando
+upgrade_etar=Geen geldig Webmin tar bestand
+upgrade_emod=Bestand is een Webmin module, geen compleete Webmin upgrade. U kunt de <a href='$1'>Webmin Modules</a> pagina gebruiken om het te installeren.
+upgrade_setup=Voert setup.sh script uit om Webmin op te waarderen.. Een ogenbik geduld a.u.b. totodat het script is voltooid voordat u verder gaat.
+upgrade_setuprpm=Voert RPM uit om Webmin op te waarderen.. Een ogenbik geduld a.u.b. totodat het script is voltooid voordat u verder gaat.
+upgrade_setuppackage=Voert pkgadd uit om Webmin op te waarderen.. Een ogenbik geduld a.u.b. totodat het script is voltooid voordat u verder gaat.
+upgrade_esolaris=Webmin's opwaarderings functie werkt op het moment nog niet wanneer u het heeft geinstalleerd vanuit een Solaris paket. Voer de opwaardering a.u.b. handmatig uit.
+
+update_desc1=Met deze functie kunt u Webmin modules opwaarderen, waarin fouten of beveiligingslekken zijn gevonden vanaf de <a href=http://www.webmin.com/updates.html>Webmin Updates</a> pagina of een andere plek. De nu geïnstalleerde modules worden vergeleken met de voorhanden zijnde nieuwe versies en desgewenst worden ze opgehaald en geïnstalleerd.
+update_header1=Installeer nu de nieuwe modules
+update_header2=Installeer de nieuwe modules op tijdschema
+update_webmin=Opwaarderen vanaf www.webmin.com
+update_other=Opwaarderen vanaf alternatief:
+update_show=Laat alleen de modules zien die zouden worden opgewaardeerd
+update_missing=Installeer modules die nu niet zijn geïnstalleerd
+update_quiet=Laat alleen de wijzigingen zien
+update_ok=Modules Opwaarderen
+update_email=Email een verslag naar:
+update_enabled=Opwaardering op tijdschema is ingeschakeld
+update_apply=Bewaren en Toepassen
+update_sched=Modules om de $2 dagen om $1:00 uur opwaarderen
+
+update_desc2=Met deze functie kunt u automatisch volgens een tijdschema Webmin modules opwaarderen, waarin fouten of beveiligingslekken zijn gevonden vanaf de <a href=http://www.webmin.com/updates.html>Webmin Updates</a> pagina of een andere plek. Alhoewel dit een handige service is, dient hij met overleg te worden gebruikt: als de Webmin site wordt gekraakt door hackers, bestaat zo de mogelijkheid dat uw server door die hackers wordt overgenomen. 
+
+ca_title=Certificaat Authoriteit
+ca_old=Bestaand certificaat
+ca_header1=Maak een nieuw CA certificaat aan
+ca_header2=Bewerk CA certificaat
+ca_newmsg1=Uw Webmin server is reeds ingesteld als een certificate authoriteit. U kunt dit formulier gebruiken om die opnieuw te doen, maar alle reeds uitgegeven certificaten zullen niet meer werken.
+ca_newmsg2=Dit formulier moet gebruikt worden om uw Webmin server in te stellen als een certificaat authoriteit (CA) zodat gebruikers een certificaat kunnen aanvragen in de Webmin Users Module zodat ze zich kunnen identificeren zonder dat een gebruikersnaam of wachtwoord vereist is.
+ca_cn=Authoreit naam
+ca_email=Email adres
+ca_ou=Afdeling
+ca_o=Organisatie
+ca_sp=Staat/Provincie
+ca_c=Land code
+ca_create=Stel certificaat authoriteit in
+ca_oldmsg1=Het CA certificaat dat deze server gebruikt kunt u hieronder zien. U kunt dit wijzigen door er het certificaat van een andere CA in het plakken, maar alle reeds uitgegeven certificaten zullen niet meer werken.
+ca_oldmsg2=Als u reeds op een andere webmin server een CA heeft ingesteld dan kunt u het hier simpelweg in plakken, in plaats van een nieuwe in te stellen. Dit zorgt ervoor dat uw gebruikers ook door de andere server zullen worden herkend.
+ca_err=Fout bij het instellen van de certificaat authoriteit
+ca_setupok=Uw certificaat authoriteit is succesvol ingesteld. Gebruikers kunne nu via de Webmin Gebruikersmodule een certificaat aanvragen.
+ca_stop=Sluit de certificaat authoriteit af
+ca_stopmsg=Klik op deze knop om het accepteren van bestaande en het uitgeven van nieuwe certificaten uit te schakelen. Hierdoor moeten gebruikers aanmelden met hun wachtwoord en gebruikersnaam.
+ca_stopok=Uw certificaat autoriteit is met succes afgesloten.
+ca_eminiserv=SSL client certificaten worden alleen ondersteund door.
+ca_eversion=De versie van de Perl Net::SSLeay module die op uw systeem is geinstalleerd ondersteund geen SSL client certificaten.
+ca_essleay=Het SSL administratie programma $1 is niet gevonden op uw systeem. U moet mogelijk het pad wijzigen in de Webmin Gebruikers module configuratie.
+ca_essl=SSL certificatie kan alleen worden ingesteld als de webserver in SSL modus draait.
+
+session_title=Verificatie
+session_desc1=Wanneer ingeschakeld beschermen wachtwoord timeouts uw Webmin server van brute-kracht wachtwoord kraak aanvallen door de steeds groter wordende vertraging tussen iedere mislukte inlog poging van dezelfde gebruiker.
+session_desc2=Wanneer sessie verificatie is ingeschakeld, wordt iedere ingelogde gebruiker door webmin gevolgd, zodat inactivieve gebruikers automatisch kunnen worden uitgelogd. Wees erop bedacht dat inschakelink of uitschakeling van sessie verificatie mogelijk tot gevolg heeft dat alle gebruiker opnieuw moeten inloggen.
+session_header=Verificatie en sessie opties
+session_pdisable=Schakel wachtwoord timeouts uit
+session_penable=Schakel wachtwoord timeouts in
+session_blockhost=Blokkeer hosts met meer dan $1 mislukte logins voor $2 seconden.
+session_syslog=Rapporteer geblokte hosts naar  <tt>syslog</tt>
+session_disable=Schakel sessie authenticatie uit
+session_enable=Schakel sessie authenticatie in
+session_localoff=Vereis altijd een gebruikersnaam en wachtwoord
+session_localon=Sta inloggen zonder wachtwoord toe vanaf de localhost
+session_logout=Automatisch uitloggen an $1 minuten van geen activiteit
+session_locking=Schakel vergrendelingn in Webmin in
+session_err=Fout bij het opslaan van verificatie
+session_elogouttime=Ontbrekende of ongeldige loguit tijd
+session_eblockhost_time=Ontbrekende of ongeldige blokkeer tijd
+session_eblockhost_failures=Ontbrekende of ongeldige blokkeer logins
+session_ecookie=Uw browser ondersteunt geen cookies, deze zijn vereist voor sessie verificatie.
+session_elsof=Locale verificatie vereist het <tt>lsof</tt> programma
+
+assignment_title=Toewijzen Modules
+assignment_header=Module categorie toewijzingen
+
+categories_title=Bewerk Categorieën
+categories_header=Categorie ID en omschrijving
+categories_new=Niewe categorie
+categories_add=Voeg Toe
+
+log_access=Wijzig IP toegangs controle
+log_bind=poort and adres gewijzigd
+log_log=Rapportage opties gewijzigd
+log_proxy=Proxy servers gewijzigd
+log_ui=Gebruikers interface opties gewijzigd
+log_install= Module $1 geinstalleerd
+log_tinstall=Thema $1 geinstalleerd
+log_clone= Module $1 naar $2 gekloond
+log_delete=Module $1 verwijderd
+log_os=Besturingssystem gewijzigd
+log_lang=Globale taal gewijzigd
+log_startpage=Index pagina opties gewijzigd
+log_upgrade=Webmin opgewaardeerd naar versie $1
+log_session=authenticatie opties gewijzigd
+log_ssl=SSL encryptie modus gewijzigd
+log_setupca=Certificate authoriteit ingesteld
+log_changeca=Certificate authoriteit gewijzigd
+log_stopca=Shut down certificate authoriteit afgesloten
+log_assignment=Module categorien gewijzigd
+log_categories=Categorie namen gewijzigd
+log_theme=Thema gewijzigd in $1
+log_theme_def=Thema gewijzigd in Webmin standaard
+log_referers=Vertwouwde verwijzers gewijzigd
+
+themes_title=Webmin Thema's
+themes_desc=Thema's bepalen het uiterlijk van de webmin gebruikersinterface, inclusief de iconen, kleuren, achtergronden en mogelijk de layout van de pagina's. Het onderstaand selectievakje kan worden gebruikt om een van de geinstalleerde thema's te kiezen.
+themes_sel=Huidig thema :
+themes_default=Standaard Webmin thema
+themes_change=Wijzig
+themes_installdesc=Gebruik het onderstaande formulier om een nieuw Webmin thema op uw systeem te installeren. Thema's worden meestal verspreid als <tt>.wbt</tt> bestanden, maar kunnen ook vanuit RPM bestanden worden geinstalleerd wanneer dit door uw besturingssysteem wordt ondersteund.
+themes_installok=Installeer Thema
+
+themes_err1=Fout bij het installeren van thema vanuit $1
+themes_efile=Bestand bestaat niet
+themes_err2=Fout bij het installeren van thema vanuit een geupload bestand
+themes_ebrowser=Uw brouwser ondersteund geen bestand uploads
+themes_err3=Fout bij het installeren van thema vanuit $1
+themes_eurl=Ongeldige URL
+themes_etar=Geen geldig thema bestand : $1
+themes_einfo=Thema $1 is bevat geen theme.info bestand
+themes_enone=Het bastand lijkt geen thema's te bevatten
+themes_eextract=Uitpakken mislukt : $1
+themes_done=De volgende thema's zijn succesvol op uw systeem geinstalleerd :
+themes_line=$1 in $2 ($3 kB)
+themes_ecomp=Het bestand is gecomprimeerd, maar het $1 commando werd niet op uw systeem gevonden
+themes_ecomp2=Fout bij het uitpakken van bestand : $1
+themes_egzip=Het bestand is gegzipt, maar het $1 commando werd niet op uw systeem gevonden
+themes_egzip2=Fout bij het gunzippen van bestand : $1
+themes_erpm=Geen Webmin thema RPM
+themes_eirpm=RPM installatie mislukt : $1
+themes_ok=Thema wijzigen gelukt .. terugkeren naar de Webmin index pagina.
+
+referers_title=Vertrouwde verwijzers
+referers_desc=Deze pagina stelt u in staat om Webmin's verwijzers controle ondersteuning te configureren, welke wordt gebruikt om te voorkomen dat kwaadaardige links van andere websites welke uw browser om de tuin leiden om gevaarlijk dingen te doen met Webmin te voorkomen. Echter wanneer u links naar Webmin heeft vanuit uw eigen websites waar u geen waarschuwing voor wilt ontvangen, dan moet u deze sies toevoegen aan de onderstaande lijst.
+referers_list=Vertrouwde websites
+referers_none=Vertrouw links van onbekende verwijzers
+referers_referer=Verwijzer controle ingeschakeld?
+
+syslet_title=Syslet Automatische-Download
+syslet_desc=Deze pagina is voor het configureren van de automatische download en installatie van ontbrekende Eazel Syslets op uw Webmin server.
+syslet_auto=Automatisch syslets downloaden ?
+syslet_base=Basis URLs voor syslet RPMs
+syslet_err=Fout bij het opslaan van de syslet opties
+syslet_ebase=Ongeldige basis URL

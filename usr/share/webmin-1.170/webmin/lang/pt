@@ -1,0 +1,127 @@
+index_title=Configuração do Webmin
+index_return=configuração do Webmin
+
+access_title=Controlo de Acesso do IP
+access_desc=O servidor Webmin pode ser configurado para negar ou permitir apenas o acesso de certos endereços IP usando este formulário. Nomes dos anfitriões (como foo.bar.com) e redes IP (como 10.254.3.0/255.255.255.128) podem também ser introduzidos.Você deve restringir o acesso ao servidor apenas para usuários de confiança, especialmente se estiver acessivel pela Internet. De outra forma, qualquer pessoa que adivinhe a sua password, terá acesso total ao sistema.
+access_header=Controlo de Acesso
+access_all=Permissão de todos os endereços
+access_allow=Apenas permitir acesso dos endereços listados
+access_deny=Negar o acesso dos endereços listados
+access_err=Falha ao actualizar a lista de acessos
+access_enone=No addresses entered - Sem introdução de endereços
+access_enet='$1' não é um endereço correcto
+access_emask='$1' não é uma máscara correcta
+access_eip='$1' não é um endereço IP ou endereço de rede completo
+access_ehost=Falha em encontrar o endereço IP '$1'
+access_eself=O seu actual endereço IP ($1) será negado
+
+bind_title=Porta e Endereço
+bind_desc=Se o anfitrião onde corre o Webmin possuir vários endereços IP, o servidor pode ser configurado apenas para um IP usando este formulário. A porta TCP onde corre o Webmin pode, também, ser configurada aqui. Nota - o seu navegador WWW pode pedir que faça o login novamente depois de alterar a porta ou endereço de ligação.
+bind_header=Endereço IP e Porta
+bind_ip=Ligação no endereço IP
+bind_all=Tudo
+bind_port=Ligação na porta
+bind_err=Falha na mudança de endereço
+bind_eip=Falha ao obter o endereço IP para '$1'
+bind_eassign=O endereço '$1' não está disponível para este sistema
+bind_eport=A porta $1 já está a ser utilizada
+
+log_title=Criação de historial
+log_desc=O Webmin pode ser configurado para escrever um ficheiro de historial de acessos web, no formato padrão CLF. Se a criação de historial estiver activada, voçê pode também escolher quais os endereços ou anfitriões a gravar no historial, e quando é que que deve ser apagado. Quando activado, os ficheiros de historial são escritos para o ficheiro $1.
+log_header=Criação de ficheiros de historial do servidor Web
+log_disable=Desactivar a criação de ficheiros de historial
+log_enable=Activar a criação de ficheiros de historial
+log_resolv=Criar historial de nomes de anfitriões definidos
+log_clear=Limpar o ficheiro de historial todas as $1 horas.
+log_err=Falha ao guardar as opções de criação de ficheiros de historial
+log_ehours='$1' não é um número válido de horas
+
+proxy_title=Servidores Proxy
+proxy_desc=Se o anfitrião onde o Webmin está a correr estiver por trás de uma firewall de qualquer tipo, você deve configurar o servidor proxy para aceder à Web e FTP. Certos módulos, como por exemplo <tt>Pacotes de Software</tt>, irão usar estes proxies para o download de ficheiros ou programas.
+proxy_header=Servidores Proxy
+proxy_http=Proxy HTTP
+proxy_ftp=Proxy FTP
+proxy_none=Nenhum
+proxy_nofor=Não utilizar proxy para
+proxy_err=Falha ao guardar as configurações de proxies
+proxy_ehttp=O servidor proxy HTTP deve ser introduzido como um URL
+proxy_eftp=O servidor proxy FTP deve ser introduzido como um URL
+
+colours_title=Esquemas de cor
+colours_desc=Este formulário permite que possa editar o esquema de cores usado por todos os módulos. Cada cor é definida pelo sistema padrão RGB, onde cada valor é um número hexadécimal de 00 até ff.
+colours_header=Esquemas de cor
+colours_default=Por defeito
+cs_page=Fundo da página
+cs_text=Texto normal
+cs_table=Fundo da tabela
+cs_header=Cabeçalho da tabela
+cs_link=Link do texto
+colours_err=Falha ao guardar o esquema de cores.
+colours_ered=Valor inválido para o vermelho '$1'
+colours_egreen=Valor inválido para o verde '$1'
+colours_eblue=Valor inválido para o azul '$1'
+
+mods_title=Módulos do Webmin
+mods_desc1=Os módulos do Webmin podem ser adicionados depois da instalação usando o formulário à direita. Os módulos são tipicamente distribuidos no formato <tt>.wbm</tt>, os quais podem conter um ou mais módulos. Se um módulo for licenciado para correr apenas num determinado anfitrião, você poderá não conseguir instalá-lo.
+mods_install=Instalar Módulo
+mods_local=De um ficheiro local
+mods_uploaded=De um ficheiro remoto
+mods_ftp=De um URL por ftp ou http
+mods_installok=Instalar Módulo do Ficheiro
+mods_desc2=Se desejar ter mais do que uma cópia do mesmo módulo com diferentes configurações, o formulário da direita permite-lhe clonar qualquer módulo exestente. O clone irá ter um novo nome, nova configuração, novas opções de controlo de acesso e poderá estar disponível para diferentes utilizadores.
+mods_clone=Clonar Módulo
+mods_cname=Módulo a clonar
+mods_cnew=Nome do módulo clonado
+mods_cloneok=Clonar Módulo
+mods_desc3=Os módulos e clones de módulos existentes podem ser apagados usando o formulário abaixo indicado. Se um módulo com clones for apagado, eles serão igualmente apagados. Uma vez que um módulo for apagado, ele terá de ser reinstalado para que possa ser usado de novo. Um módulo não pode ser apagado se outros módulos dependerem dele.
+mods_delete=Apagar Módulos
+mods_deleteok=Apagar Módulos Seleccionados
+
+install_err1=Falha ao instalar o módulo de $1
+install_efile=O ficheiro não existe
+install_err2=Falha ao instalar o módulo remoto.
+install_ebrowser=O seu navegador Web não suporta upload de ficheiros
+install_err3=$1 Falha ao instalar módulo de $1
+install_eurl=URL Inválido
+install_etar=O ficheiro $1 não é um módulo válido
+install_einfo=Falta o ficheiro module.info no módulo $1
+install_enone=O ficheiro aparenta não conter nenhum módulo
+install_eos=O módulo $1 não é suportado por o actual sistema operativo ($2 $3)
+install_ever=O módulo $1 requer a versão $2 do Webmin ou posterior
+install_edep=O módulo $1 requer o módulo $2
+install_eextract=Falha na extracção : $1
+install_title=Módulo Instalado
+install_desc=Os seguintes módulos foram instalados com sucesso e adicionados à lista de controlo de acesso :
+install_line=$1 em $2 ($3 kB)
+
+clone_err=Falha ao clonar o módulo
+clone_elink=falha no atalho simbólico : $1
+clone_ecopy=falha ao copiar a configuração : $1
+clone_desc=Clone de $1
+
+delete_err=Falha ao apagar os módulos
+delete_edep=O módulo $1 não pode ser apagado porque o módulo $2 está dependente dele.
+delete_desc1=$1 (Clone de $2)
+delete_desc2=$1 em $2 ($3 kB)
+delete_title=Apagar módulos
+delete_msg=Os seguintes foram apagados com sucesso da instalação do Webmin :
+
+os_title=Sistema Operativo
+os_desc=Este formulário permite-lhe alterar o sistema operativo considerado pelo Webmin. Isto pode ser útil se efectuou um upgrade para uma nova versão do seu sistema operativo.
+os_header=Sistema Operativo do Anfitrião
+os_curros=Sistema operativo actual
+os_currver=Versão actual do SO
+os_new=Novo sistema operativo
+
+lang_title=Linguagem
+lang_title2=Linguagem do Webmin
+lang_lang=Mostrar em
+lang_intro=Esta página permite-lhe escolher a linguagem a usar pelo Webmin na apresentação de titulos, comandos e mensagens
+lang_ok=Alterar Linguagem
+
+ssl_title=Encriptação SSL
+ssl_desc1=O anfitrião onde corre o Webmin, parece possuir o módulo de Perl SSLeay instalado. Usando isto, O webmin suporta a comunicação encriptada SSL entre o seu navegador Web e o servidor. Se está a aceder ao Webmin via Internet, então deve definitivamente considerar o uso do SSL para prevenir a captura da password do Webmin por um atacante.
+ssl_desc2=Atenção - apenas deve activar o suporte de SSL se o seu navegador Web o suportar (como por exemplo o Netscape ou IE), e não existe nenhuma firewall a bloquear pedidos <b>https</b> entre o seu navegador e o anfitrião do Webmin
+ssl_header=Suporte de SSL
+ssl_enable=Activar o suporte de SSL, se disponível
+ssl_disable=Desactivar o suporte de SSL, mesmo se disponível

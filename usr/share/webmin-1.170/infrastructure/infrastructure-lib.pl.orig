@@ -1,0 +1,56 @@
+# infrastructure-lib.pl
+# Functions for setting up infrastructure
+#
+
+do '../web-lib.pl';
+&init_config();
+require '../ui-lib.pl';
+use Config::Properties;
+
+my $config_file         = "/etc/smartap.conf";
+
+sub set_property
+{
+        my $pkey        = shift;
+        my $pvalue      = shift;
+
+        #       -- Open property file for reading
+        open PROPS, "< $config_file"
+                or die "File read error in $config_file: $!";
+
+        #       -- Load properties
+        my $properties  = new Config::Properties();
+           $properties->load(*PROPS);
+
+        close PROPS;
+
+        #       -- Open property file for writing
+        open PROPS, "> $config_file"
+                or die "unable to open configuration file for writing";
+
+        $properties->changeProperty( $pkey, $pvalue);
+
+        $properties->format( '%s=%s' );
+        $properties->store(*PROPS);
+        close PROPS;
+
+        return;
+}
+
+sub get_property
+{
+        my $key = shift;
+
+        open PROPS, "< $config_file"
+                or die "unable to open configuration file";
+
+        my $properties = new Config::Properties();
+           $properties->load(*PROPS);
+
+        my $value = $properties->getProperty("$key");
+
+        close PROPS;
+
+        return $value;
+}
+

@@ -1,0 +1,25 @@
+<table class=content border=0 width=100%>
+ <tr><td colspan=2><!--SPECIAL_MESSAGE--></td></tr>
+  <tr>
+  <td class=leftcontent>
+<p class=info><!--info--></p>
+<p class=contentheader>Advanced Configuration</p>		
+<p> On this Page you can Shutdown, Reset and turn off Secure Mode</p>
+  Please choose from below:<br>
+  <form action=adv.cgi method=post>	
+  <table>
+   <tr><td> <select name="action" size=1>
+    <option value="Shutdown">Shutdown</option>
+    <option value="Reset">Reset</option>
+    <option value="Secmodeoff">Turn off Secure Mode</option>
+    <option value="Secmodeon">Turn on Secure Mode</option>
+    <option value="Passwd">Change Admin Password</option>
+    </select></td>
+    <td>
+    <input type=hidden name=step value="1">
+    <input type=submit name="action2" value="Apply"></td></tr>
+  </table> 
+  </form>
+</table>
+
+

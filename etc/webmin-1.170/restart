@@ -1,0 +1,2 @@
+#!/bin/sh
+/etc/webmin-1.170/stop && /etc/webmin-1.170/start

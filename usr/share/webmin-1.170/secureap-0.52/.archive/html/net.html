@@ -1,0 +1,44 @@
+<table class=content border=0 width=100%>
+ <tr><td colspan=2><!--SPECIAL_MESSAGE--></td></tr>
+  <tr>
+  <td class=leftcontent>
+  <p class=info><!--info--></p>
+  <p class=contentheader>Network Settings</p>
+  <form action=net.cgi method=post>	
+  <table>
+  <tr><td class=contentsubheader span=2>Backbone Interface</td></tr>
+  <tr><td>IP Address</td><td><input name="address" value="<!--address-->"></td></tr>
+  <tr><td>Netmask</td><td><input name="netmask" value="<!--netmask-->"></td></tr>
+  <tr><td>Broadcast</td><td><input name="broadcast" value="<!--broadcast-->"></td></tr>
+  <tr><td>Gateway</td><td><input name="up route add default gw" value="<!--up route add default gw-->"></td></tr>
+  <tr><td></td><td><input type="submit" name="do" value="Update Backbone Interface"></td></tr>
+  </table>
+  <br>
+  <br>
+
+  <table>
+  <tr>
+  <td>  
+  
+  <table>
+    <tr><td class=contentsubheader>WLAN Interface</td></tr>
+    <tr><td>IP Address</td><td><input name="wlanaddress" value="<!--wlanaddress-->"></td></tr>
+  <tr><td></td></tr>
+      <tr><td></td><td><input type="submit" name="do" value="Update WLAN Interface">
+       <input type="hidden" name="action" value="Submit"></td></tr>
+  </table>
+  </td>
+
+  <td class=abstand>
+  <table>
+  <tr><td class=contentsubheader>DHCP</td></tr>
+  <tr><td>Activate DHCP<input type="checkbox" name="dhcp" value="checked" <!--dhcp-->></td></tr>
+  <tr><td>Start Range: <input name="dhcpstart" value="<!--dhcpstart-->"></td></tr>
+  <tr><td>End Range: <input name="dhcpend" value="<!--dhcpend-->"></td></tr>
+  </table>
+  </td>
+
+  </tr>
+  </table>
+  </form>
+</table>

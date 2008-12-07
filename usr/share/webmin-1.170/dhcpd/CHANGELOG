@@ -1,0 +1,4 @@
+---- Changes since 1.130 ----
+Group and subnet descriptions are now shown in the list of groups and networks that a host or other element can be assigned to.
+---- Changes since 1.150 ----
+Custom option definitions can now be edited, and will be preserved in the configuration file if manually defined.

@@ -1,0 +1,91 @@
+body {
+	font-family: 	arial;
+	font-size:	12px;
+}
+table {
+	border-style:	dotted;
+	border-width:	0 0 0 0;
+	cell-padding:	0;
+	cell-spacing:	0;
+}
+td	{
+	font-size:	12px;
+	border-color:	black;
+	border-width:	1 1 1 1;
+	valign:		top;	
+}
+hr	{
+	color:		lightblue;
+	width:		100%;
+}
+
+.smallgreytext 	{
+	color:		grey;
+	font-size:	8pt;
+}
+.sec_header	{
+	color:		grey;
+	font-size:	11pt;
+	font-weight:	bold;
+}
+
+th 	{
+	color:		black;
+	font-size:	11pt;
+	font-weight:	bold;
+	background:	#9999ff;
+	text-align:	left;
+}
+
+pre	{
+	font-family:	courier new;
+	font-size:	8pt;
+}
+
+.sys_msg {
+	color: red;
+}
+
+td.capsule
+{
+	width:		700px;
+	height:		500px;
+	vertical-align:	top;
+	align:		center;
+}
+
+table.main
+{
+#	-moz-border-radius: 	2em;
+}
+
+td.copyright
+{
+	font-family:	verdana;
+	font-size:	7pt;
+	font-style:	normal;
+	color:		#27455B;
+	vertical-align:	bottom;
+	text-align:	center;
+	border-style:	solid;
+	border-width:	1 0 0 0;
+	border-color:	grey;
+	padding:	0 10 0 10;
+}
+h1
+{
+	font-family:	verdana;
+	font-size:	18pt;
+	color:		#27455B;
+}
+
+a:link {
+        text-decoration: underline;
+}
+a:visited {
+	color: blue;
+        text-decoration: underline;
+}
+a:hover {
+        text-decoration: none;
+}

@@ -1,0 +1,6 @@
+sort_mode=0
+scan_time=5
+show_status=1
+resolve=1
+display_mode=0
+groups_dir=/etc/cluster/groups

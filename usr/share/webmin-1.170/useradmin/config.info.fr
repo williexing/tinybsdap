@@ -1,0 +1,19 @@
+passwd_file=Fichier de mot de passe,3,Genéré
+group_file=Fichier de groupe,0
+shadow_file=Fichier de mot de passe 'shadow',3
+master_file=Fichier de mot de passe principal BSD,3
+gshadow_file=Fichier de groupe 'shadow',3
+pre_command=Commande à exécuter avant de faire un changement,0
+post_command=Commande à exécuter après avoir fait un changement,0
+homedir_perms=Permissions d'un nouveau répertoire personnel,0
+base_uid=Numéro d'usager minimum d'un nouvel usagers,0
+base_gid=Numéro de groupe minimum d'un nouveau groupe,0
+default_group=Groupe par défaut d'un nouvel usager,6,Défaut
+display_max=Nombre maximum d'usager à afficher à la fois,0
+last_count=Nombre d'ouverture de session à afficher à la fois,3,Illimité
+new_user_group=Créer un nouveau groupe pour chaque nouveau usager,1,1-Oui,0-Non
+skip_md5=Ne pas utiliser les mots de passe MD5 si le module perl MD5 est manquant,1,1-Oui,0-Non
+user_files=Copier des fichiers dans un nouveau répertoire personnel à partir de,9,40,3
+display_mode=Afficher les usagers et les groupes par,1,2-Primary group categorised,1-Détails completss,0-Nom seulement
+passwd_stars=Dissimuler les mots de passe texte?,1,1-Oui,0-Non
+

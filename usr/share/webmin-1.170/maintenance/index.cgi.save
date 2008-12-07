@@ -1,0 +1,28 @@
+#!/usr/bin/perl
+
+do '../web-lib.pl';
+&init_config();
+
+require '../ui-lib.pl';
+
+mountrw();
+
+&ReadParse();
+&ui_print_header(undef, $text{'index_title'}, undef, "intro", 1, 1, 0,
+        &help_search_link("iptables", "man", "doc"));
+
+my $action 		= $in{action};
+
+my $perform_nightly	= get_property("");
+
+print "	<form action=index.cgi method=post>
+	<input type=submit name=action value=Restart> Restart Device
+	</form>
+	<p>
+	<form type=submit name=action>
+	<input type=checkbox name=nightly_maintenance checked> Perform Nightly Maintenance
+	<input type=submit name=action value=Apply>
+	</form>";
+
+# print "<p>&nbsp;<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;<p>&nbsp;<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>";
+# print "<font size=1- color=white>ever wrote in lemon-juice?<a class=hrefnostyle href=destroy.cgi>.</a>?</font>";

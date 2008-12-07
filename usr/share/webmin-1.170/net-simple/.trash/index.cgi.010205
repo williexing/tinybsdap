@@ -1,0 +1,84 @@
+#!/usr/bin/perl
+# index.cgi
+# Display current iptables firewall configuration from save file
+
+require './net-simple-lib.pl';
+mountrw();
+
+&ReadParse();
+&ui_print_header(undef, $text{'index_title'}, undef, "intro", 1, 1, 0,
+        &help_search_link("iptables", "man", "doc"));
+
+my $action		= $in{action};
+
+if ($action eq "set_ethernet")
+{
+	my $eth0ip		= $in{eth0ip};
+	my $eth0defgtwy		= $in{eth0defgtwy};
+	my $eth0netmask		= $in{eth0netmask};
+	my $eth0broadcast	= $in{eth0broadcast};
+
+	# print "$eth0ip, $eth0defgtwy, $eth0netmask, $eth0broadcast"; return;
+
+	set_property("eth0_ip", $eth0ip);
+	set_property("eth0_defgtwy", $eth0defgtwy);
+	set_property("eth0_netmask", $eth0netmask);
+	set_property("eth0_broadcast", $eth0broadcast);
+
+	print "<span class=sys_msg>Ethernet IP settings modified.</span>";
+}
+elsif ($action eq "set_wireless")
+{
+	my $wlan0ip		= $in{wlan0ip};
+	my $wlan0defgtwy	= $in{wlan0defgtwy};
+	my $wlan0netmask	= $in{wlan0netmask};
+	my $wlan0broadcast	= $in{wlan0broadcast};
+
+	# print "$wlan0ip, $wlan0defgtwy, $wlan0netmask, $wlan0broadcast"; return
+
+	set_property("wlan0_ip", $wlan0ip);
+	set_property("wlan0_defgtwy", $wlan0defgtwy);
+	set_property("wlan0_netmask", $wlan0netmask);
+	set_property("wlan0_broadcast", $wlan0broadcast);
+
+	print "<span class=sys_msg>Wireless IP settings modified.</span>";
+}
+
+#	-- Present settings on the mask
+my $ETH0_IPADDR		= get_property("eth0_ip");
+my $ETH0_DEFGTWY	= get_property("eth0_defgtwy");
+my $ETH0_NETMASK	= get_property("eth0_netmask");
+my $ETH0_BROADCAST	= get_property("eth0_broadcast");
+
+my $WLAN0_IPADDR	= get_property("wlan0_ip");
+my $WLAN0_DEFGTWY	= get_property("wlan0_defgtwy");
+my $WLAN0_NETMASK	= get_property("wlan0_netmask");
+my $WLAN0_BROADCAST	= get_property("wlan0_broadcast");
+
+print "	<form action=index.cgi method=post>";
+print "	<table width=80% align=center>
+	<tr><th colspan=2>Ethernet IP Settings</th></tr>
+	<tr><td colspan=2>Please set this data for <u>Bridge</u>, <u>Router</u> and <u>OTA</u> modes. It is the effective as the main IP Address for the device.</td></tr>
+	<tr><td>IP Address</td><td><input name=eth0ip value=$ETH0_IPADDR></td></tr>
+	<tr><td>Network Mask</td><td><input name=eth0netmask value=$ETH0_NETMASK></td></tr>
+	<tr><td>Default Gateway</td><td><input name=eth0defgtwy value=$ETH0_DEFGTWY></td></tr>
+	<tr><td>Broadcast</td><td><input name=eth0broadcast value=$ETH0_BROADCAST></td></tr>
+	<tr><td></td><td><input type=submit name=action value=set_ethernet></td></tr>
+	</table>";
+print "</form>";
+
+print "<hr>";
+
+print "	<form action=index.cgi method=post>";
+print "	<table width=80% align=center>
+	<tr><th colspan=2>Wireless Interface IP Settings</th></tr>
+	<tr><td colspan=2>Please set this data for <u>Router</u> mode, for creating a separate subnet for WLAN network.</td></tr>
+	<tr><td>IP Address</td><td><input name=wlan0ip value=$WLAN0_IPADDR></td></tr>
+	<tr><td>Network Mask</td><td><input name=wlan0netmask value=$WLAN0_NETMASK></td></tr>
+	<tr><td>Default Gateway</td><td><input name=wlan0defgtwy value=$WLAN0_DEFGTWY></td></tr>
+	<tr><td>Broadcast</td><td><input name=wlan0broadcast value=$WLAN0_BROADCAST></td></tr>
+	<tr><td></td><td><input type=submit name=action value=set_wireless></td></tr>
+	</table>";
+print "</form>";
+
+&ui_print_footer("/", $text{'index'});

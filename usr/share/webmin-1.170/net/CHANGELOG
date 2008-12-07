@@ -1,0 +1,13 @@
+---- Changes since 1.130 ----
+Added support for Slackware Linux.
+---- Changes since 1.140 ----
+Fixed support for Slackware Linu 9.1, which uses a different configuration file.
+Added an option to update /etc/hosts when changing the system's hostname.
+Fixed virtual interface numbering on Solaris.
+Added links from ppp* interfaces to the actual modules that handle them, like PPPP Dialin Client or ADSL Client.
+Added support for boot-time address range interfaces on Redhat and similar Linux distributions.
+---- Changes since 1.150 ----
+Added checks on Linux to prevent interfaces with IPs that are already in use from being added, as this is not allowed by the OS.
+---- Changes since 1.160 ----
+Added the ability to configure static routes on Debian systems.
+Fixed bugs that prevented the module from working on SuSE 9.0+, and made it visible on those distributions again.

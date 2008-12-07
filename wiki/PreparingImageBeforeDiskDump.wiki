@@ -12,7 +12,7 @@
  # Fill in all MAC addresses to be filtered into `/etc/mac_filter.conf`, or just `touch` this file
 
 ----
-Define a service port on one of the spare ethernet interfaces, so that if the network config is hosed, we can still access the box on this service port.  For Soekris net4511 and net4521, the service port is sis1.  Set the IP of this to 192.168.168.168 (or anything you prefer, and not used for other network interfaces on the device).
+Define a *service port* on one of the spare ethernet interfaces, so that if the network config is hosed, we can still access the box on this service port.  For Soekris net4511 and net4521, the service port is sis1.  Set the IP of this to 192.168.168.168 (or anything you prefer, and not used for other network interfaces on the device).
 
 Add to `/etc/rc.conf`
 {{{
@@ -20,7 +20,7 @@ Add to `/etc/rc.conf`
 ifconfig_sis1="inet 192.168.168.168 netmask 255.255.255.0"
 }}}
 ----
-Change the default shell to bash using `chsh`
+Change the *default shell* to bash using `chsh`
 {{{
 [root@fbsd70 /mnt]# chroot .
 [root@fbsd70 /]# chsh
@@ -47,7 +47,7 @@ chsh: warning, unknown root shell
 pwd_mkdb: warning, unknown root shell
 chsh: user information updated
 }}}
-----
+
 === Activate the sis0 Interface ===
 sis0 ethernet interface has to be activated in `/boot/default/loader.conf`
 {{{

@@ -61,3 +61,10 @@ Files have to be copied into 3 locations on the target for properly functioning 
  * /usr/share/webmin-1.170
 
 Perl on TinyBSD is located at /usr/local/bin/perl, but Webmin looks for it at /usr/bin/perl.  symlink those.
+
+=== remount scripts ===
+
+Create `/usr/bin/remountro` and `/usr/bin/remountrw` scripts using 
+{{{
+ # mount -u -o r{w,o} /
+}}}
